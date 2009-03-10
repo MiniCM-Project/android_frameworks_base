@@ -32216,10 +32216,11 @@
  visibility="public"
 >
 </field>
-<field name="themeInfo"
- type="android.content.pm.ThemeInfo"
+<field name="themeInfos"
+ type="android.content.pm.ThemeInfo[]"
  transient="false"
  volatile="false"
+ value="null"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -32768,8 +32769,8 @@
 <parameter name="flags" type="int">
 </parameter>
 </method>
-<method name="getInstalledThemes"
- return="java.util.List&lt;android.content.pm.ThemeInfo&gt;"
+<method name="getInstalledThemePackages"
+ return="java.util.List&lt;android.content.pm.PackageInfo&gt;"
  abstract="true"
  native="false"
  synchronized="false"
@@ -35020,7 +35021,7 @@
  visibility="public"
 >
 </field>
-<field name="themePackage"
+<field name="themeName"
  type="java.lang.String"
  transient="false"
  volatile="false"
@@ -101092,8 +101093,8 @@
 <parameter name="flags" type="int">
 </parameter>
 </method>
-<method name="getInstalledThemes"
- return="java.util.List&lt;android.content.pm.ThemeInfo&gt;"
+<method name="getInstalledThemePackages"
+ return="java.util.List&lt;android.content.pm.PackageInfo&gt;"
  abstract="false"
  native="false"
  synchronized="false"
