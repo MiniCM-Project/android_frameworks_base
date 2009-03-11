@@ -156682,6 +156682,25 @@
 </parameter>
 </method>
 </class>
+<interface name="TabHost.IndicatorStrategy"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="createIndicatorView"
+ return="android.view.View"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
 <interface name="TabHost.OnTabChangeListener"
  abstract="true"
  static="true"
@@ -156797,6 +156816,19 @@
 <parameter name="label" type="java.lang.CharSequence">
 </parameter>
 <parameter name="icon" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method name="setIndicator"
+ return="android.widget.TabHost.TabSpec"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="indicatorFactory" type="android.widget.TabHost.IndicatorStrategy">
 </parameter>
 </method>
 </class>
