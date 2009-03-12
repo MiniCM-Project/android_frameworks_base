@@ -35022,7 +35022,27 @@
  visibility="public"
 >
 </field>
+<field name="notificationRingtoneFileName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="notificationRingtoneName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ringtoneFileName"
  type="java.lang.String"
  transient="false"
  volatile="false"
