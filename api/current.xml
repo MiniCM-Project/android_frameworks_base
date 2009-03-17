@@ -1956,6 +1956,17 @@
  visibility="public"
 >
 </field>
+<field name="button2Text"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843357"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="buttonStyle"
  type="int"
  transient="false"
@@ -1994,6 +2005,17 @@
  transient="false"
  volatile="false"
  value="16842827"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="buttonText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843356"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -3606,6 +3628,17 @@
  visibility="public"
 >
 </field>
+<field name="headerText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843352"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="height"
  type="int"
  transient="false"
@@ -3683,11 +3716,44 @@
  visibility="public"
 >
 </field>
+<field name="icon2Src"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843359"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="icon3Src"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843360"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="iconPreview"
  type="int"
  transient="false"
  volatile="false"
  value="16843337"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="iconSrc"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843358"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -4117,6 +4183,28 @@
  transient="false"
  volatile="false"
  value="16843057"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="itemLabelText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843361"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="itemText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843362"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -6911,6 +6999,39 @@
  transient="false"
  volatile="false"
  value="16843030"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="subHeader2Text"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843354"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="subHeaderText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843353"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="subLabelText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843355"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -153560,7 +153681,10 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<method name="setCarouselContent"
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="setContent"
  return="android.widget.TabHost.TabSpec"
  abstract="false"
  native="false"
@@ -156775,7 +156899,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<method name="setContent"
+<method name="setCarouselContent"
  return="android.widget.TabHost.TabSpec"
  abstract="false"
  native="false"
