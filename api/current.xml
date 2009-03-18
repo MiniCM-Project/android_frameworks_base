@@ -4167,6 +4167,17 @@
  visibility="public"
 >
 </field>
+<field name="item2Text"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843364"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="itemBackground"
  type="int"
  transient="false"
@@ -4189,6 +4200,17 @@
  visibility="public"
 >
 </field>
+<field name="itemLabel2Text"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843362"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="itemLabelText"
  type="int"
  transient="false"
@@ -4204,7 +4226,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843362"
+ value="16843363"
  static="true"
  final="true"
  deprecated="not deprecated"
