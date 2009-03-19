@@ -7324,6 +7324,39 @@
  visibility="public"
 >
 </field>
+<field name="textAppearanceLabel"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843365"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="textAppearanceLabelHeader"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843366"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="textAppearanceLabelSubHeader"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843367"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="textAppearanceLarge"
  type="int"
  transient="false"
