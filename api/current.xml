@@ -11381,6 +11381,28 @@
  visibility="public"
 >
 </field>
+<field name="tmobile_spinner_dropdown_item"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17367061"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="tmobile_spinner_item"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17367060"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="two_line_list_item"
  type="int"
  transient="false"
