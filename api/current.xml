@@ -4453,6 +4453,28 @@
  visibility="public"
 >
 </field>
+<field name="labelPosition"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843374"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="labelText"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843373"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="labelTextSize"
  type="int"
  transient="false"
