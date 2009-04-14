@@ -35170,6 +35170,26 @@
  visibility="public"
 >
 </field>
+<field name="parentThemeId"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="parentThemePackageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ringtoneFileName"
  type="java.lang.String"
  transient="false"
