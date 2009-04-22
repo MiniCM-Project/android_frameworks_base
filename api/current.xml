@@ -156974,7 +156974,7 @@
  deprecated="not deprecated"
  visibility="protected"
 >
-<parameter name="mLaunchedView" type="android.view.View">
+<parameter name="aView" type="android.view.View">
 </parameter>
 </method>
 <method name="setCurrentTab"
