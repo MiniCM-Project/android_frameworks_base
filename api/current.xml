@@ -2330,6 +2330,17 @@
  visibility="public"
 >
 </field>
+<field name="colorDisabled"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843395"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="colorForeground"
  type="int"
  transient="false"
@@ -2346,6 +2357,72 @@
  transient="false"
  volatile="false"
  value="16843270"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="colorPrimaryFocus"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843390"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="colorPrimaryPressed"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843391"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="colorRest"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843396"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="colorSecondaryFocus"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843392"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="colorSecondaryPressed"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843393"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="colorTertiary"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843394"
  static="true"
  final="true"
  deprecated="not deprecated"
