@@ -1593,6 +1593,17 @@
  visibility="public"
 >
 </field>
+<field name="alertDialogTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843400"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="allowClearUserData"
  type="int"
  transient="false"
@@ -2720,6 +2731,17 @@
  transient="false"
  volatile="false"
  value="16842897"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="dialogTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843399"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -4876,6 +4898,17 @@
  transient="false"
  volatile="false"
  value="16843284"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="listItemTextViewStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843401"
  static="true"
  final="true"
  deprecated="not deprecated"
