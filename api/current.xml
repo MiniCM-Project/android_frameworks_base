@@ -6532,6 +6532,17 @@
  visibility="public"
 >
 </field>
+<field name="seekBarPreferenceStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843452"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="seekBarStyle"
  type="int"
  transient="false"
