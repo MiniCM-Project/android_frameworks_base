@@ -7907,6 +7907,17 @@
  visibility="public"
 >
 </field>
+<field name="tmobileEditTextPreferenceStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843453"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="toAlpha"
  type="int"
  transient="false"
