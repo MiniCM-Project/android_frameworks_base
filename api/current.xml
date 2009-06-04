@@ -1912,6 +1912,17 @@
  visibility="public"
 >
 </field>
+<field name="bottomLeftStrip"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843405"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="bottomMedium"
  type="int"
  transient="false"
@@ -1939,6 +1950,17 @@
  transient="false"
  volatile="false"
  value="16843180"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="bottomRightStrip"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843403"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -7098,6 +7120,17 @@
  transient="false"
  volatile="false"
  value="16842777"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="tabIndicatorStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843404"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -12477,6 +12510,17 @@
  transient="false"
  volatile="false"
  value="16973864"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Widget_TabIndicator"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973915"
  static="true"
  final="true"
  deprecated="not deprecated"
