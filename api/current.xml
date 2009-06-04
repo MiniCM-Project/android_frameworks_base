@@ -7401,6 +7401,17 @@
  visibility="public"
 >
 </field>
+<field name="textAppearanceTab"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843406"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="textCheckMark"
  type="int"
  transient="false"
