@@ -1604,6 +1604,39 @@
  visibility="public"
 >
 </field>
+<field name="allAppsGridViewStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843409"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="allAppsTextAppearance"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843414"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="allAppsTextViewStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843413"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="allowClearUserData"
  type="int"
  transient="false"
@@ -2671,6 +2704,17 @@
  visibility="public"
 >
 </field>
+<field name="deleteZoneStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843418"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="dependency"
  type="int"
  transient="false"
@@ -3688,6 +3732,17 @@
  transient="false"
  volatile="false"
  value="16842786"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="handleViewStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843408"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -4986,6 +5041,39 @@
  transient="false"
  volatile="false"
  value="16842869"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="liveFolderButtonStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843417"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="liveFolderGridStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843415"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="liveFolderListStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843416"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -8391,6 +8479,39 @@
  visibility="public"
 >
 </field>
+<field name="workspaceStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843410"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="workspaceStyleLandscape"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843411"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="workspaceStylePortrait"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843412"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="writePermission"
  type="int"
  transient="false"
@@ -8507,6 +8628,17 @@
  transient="false"
  volatile="false"
  value="17170444"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="bright_text_dark_focused"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17170450"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -11652,6 +11784,39 @@
  transient="false"
  volatile="false"
  value="16973827"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LauncherWorkspaceIcon"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973916"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LauncherWorkspaceIcon_Landscape"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973918"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LauncherWorkspaceIcon_Portrait"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973917"
  static="true"
  final="true"
  deprecated="not deprecated"
