@@ -11436,6 +11436,17 @@
  visibility="public"
 >
 </field>
+<field name="tmobile_simple_list_item_multiple_choice"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17367064"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="tmobile_spinner_dropdown_item"
  type="int"
  transient="false"
