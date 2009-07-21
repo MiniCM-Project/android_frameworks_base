@@ -11414,6 +11414,17 @@
  visibility="public"
 >
 </field>
+<field name="tmobile_list_item_label_checkable"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17367065"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="tmobile_simple_list_item_multiple_choice"
  type="int"
  transient="false"
