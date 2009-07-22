@@ -2759,6 +2759,50 @@
  visibility="public"
 >
 </field>
+<field name="dialerDeleteButtonStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843426"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="dialerDialpadButtonStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843428"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="dialerInputStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843425"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="dialerScreenBackgroundStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843427"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="dialogIcon"
  type="int"
  transient="false"
@@ -6518,6 +6562,17 @@
  static="true"
  final="true"
  deprecated="deprecated"
+ visibility="public"
+>
+</field>
+<field name="searchDialogTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843407"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
  visibility="public"
 >
 </field>
