@@ -1597,7 +1597,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843400"
+ value="16843403"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1608,7 +1608,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843409"
+ value="16843412"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1619,7 +1619,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843414"
+ value="16843417"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1630,7 +1630,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843413"
+ value="16843416"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1949,7 +1949,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843405"
+ value="16843408"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -1993,7 +1993,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843403"
+ value="16843406"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2082,6 +2082,28 @@
  transient="false"
  volatile="false"
  value="16843385"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="buttonStyleTimePickerDown"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843424"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="buttonStyleTimePickerUp"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843423"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2444,7 +2466,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843395"
+ value="16843398"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2477,7 +2499,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843390"
+ value="16843432"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2488,7 +2510,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843391"
+ value="16843394"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2499,7 +2521,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843396"
+ value="16843399"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2510,7 +2532,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843401"
+ value="16843400"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2521,7 +2543,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843392"
+ value="16843395"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2532,7 +2554,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843393"
+ value="16843396"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2543,7 +2565,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843394"
+ value="16843397"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2752,7 +2774,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843418"
+ value="16843421"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2895,7 +2917,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843399"
+ value="16843431"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -3386,6 +3408,17 @@
  visibility="public"
 >
 </field>
+<field name="expandedMenuTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843430"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="exported"
  type="int"
  transient="false"
@@ -3830,7 +3863,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843408"
+ value="16843411"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -4050,7 +4083,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843421"
+ value="16843393"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5223,11 +5256,22 @@
  visibility="public"
 >
 </field>
-<field name="listItemTextViewStyle"
+<field name="listItemBackground"
  type="int"
  transient="false"
  volatile="false"
  value="16843401"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="listItemTextViewStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843404"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5293,7 +5337,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843417"
+ value="16843433"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5304,7 +5348,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843415"
+ value="16843418"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5315,7 +5359,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843416"
+ value="16843434"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5481,6 +5525,17 @@
  transient="false"
  volatile="false"
  value="16843230"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="menuItemBackground"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843429"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -6789,7 +6844,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843407"
+ value="16843405"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -7548,7 +7603,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843404"
+ value="16843407"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -7823,7 +7878,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843406"
+ value="16843409"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -8176,6 +8231,17 @@
  transient="false"
  volatile="false"
  value="16843265"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="timePickerInputStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843422"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -8835,7 +8901,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843410"
+ value="16843413"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -8846,7 +8912,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843411"
+ value="16843414"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -8857,7 +8923,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="16843412"
+ value="16843415"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -11770,7 +11836,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="17367065"
+ value="17367063"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -12873,6 +12939,17 @@
  transient="false"
  volatile="false"
  value="16973859"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Widget_EditText_TimePicker"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973919"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -32345,6 +32422,214 @@
 </parameter>
 </method>
 </class>
+<class name="BaseThemeInfo"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.os.Parcelable">
+</implements>
+<constructor name="BaseThemeInfo"
+ type="android.content.pm.BaseThemeInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</constructor>
+<constructor name="BaseThemeInfo"
+ type="android.content.pm.BaseThemeInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method name="changeDrmFlagIfNeeded"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="resourcePath" type="java.lang.String">
+</parameter>
+</method>
+<method name="describeContents"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="writeToParcel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field name="author"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="copyright"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="favesAppImageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="favesImageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="name"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="notificationRingtoneFileName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="notificationRingtoneName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ringtoneFileName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ringtoneName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="soundPackName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="styleResourceId"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="themeId"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="thumbnail"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="wallpaperImageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
 <class name="ComponentInfo"
  extends="android.content.pm.PackageItemInfo"
  abstract="false"
@@ -35642,15 +35927,13 @@
 </field>
 </class>
 <class name="SoundsInfo"
- extends="java.lang.Object"
+ extends="android.content.pm.BaseThemeInfo"
  abstract="false"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
-<implements name="android.os.Parcelable">
-</implements>
 <constructor name="SoundsInfo"
  type="android.content.pm.SoundsInfo"
  static="false"
@@ -35665,32 +35948,6 @@
 <exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
 </exception>
 </constructor>
-<method name="describeContents"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="writeToParcel"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="dest" type="android.os.Parcel">
-</parameter>
-<parameter name="flags" type="int">
-</parameter>
-</method>
 <field name="CREATOR"
  type="android.os.Parcelable.Creator"
  transient="false"
@@ -35701,107 +35958,15 @@
  visibility="public"
 >
 </field>
-<field name="author"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="copyright"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="isDrmProtected"
- type="boolean"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="name"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="notificationRingtoneFileName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="notificationRingtoneName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ringtoneFileName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ringtoneName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="thumbnail"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 </class>
 <class name="ThemeInfo"
- extends="java.lang.Object"
+ extends="android.content.pm.BaseThemeInfo"
  abstract="false"
  static="false"
  final="true"
  deprecated="not deprecated"
  visibility="public"
 >
-<implements name="android.os.Parcelable">
-</implements>
 <constructor name="ThemeInfo"
  type="android.content.pm.ThemeInfo"
  static="false"
@@ -35816,198 +35981,12 @@
 <exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
 </exception>
 </constructor>
-<method name="describeContents"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="writeToParcel"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="dest" type="android.os.Parcel">
-</parameter>
-<parameter name="flags" type="int">
-</parameter>
-</method>
 <field name="CREATOR"
  type="android.os.Parcelable.Creator"
  transient="false"
  volatile="false"
  static="true"
  final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="author"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="copyright"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="favesAppImageName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="favesImageName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="isDrmProtected"
- type="boolean"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="notificationRingtoneFileName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="notificationRingtoneName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="parentThemeId"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="parentThemePackageName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ringtoneFileName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ringtoneName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="soundPackName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="theme"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="themeName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="thumbnail"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="wallpaperImageName"
- type="java.lang.String"
- transient="false"
- volatile="false"
- static="false"
- final="false"
  deprecated="not deprecated"
  visibility="public"
 >
