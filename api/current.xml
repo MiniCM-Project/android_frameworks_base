@@ -177201,6 +177201,16 @@
 <parameter name="pixels" type="int">
 </parameter>
 </method>
+<field name="mInputMethodState"
+ type="android.widget.TextView.InputMethodState"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="TextView.BufferType"
  extends="java.lang.Enum"
@@ -177234,6 +177244,15 @@
  visibility="public"
 >
 </method>
+</class>
+<class name="TextView.InputMethodState"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility=""
+>
 </class>
 <interface name="TextView.OnEditorActionListener"
  abstract="true"
