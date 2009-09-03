@@ -4035,6 +4035,17 @@
  visibility="public"
 >
 </field>
+<field name="iconMenuTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843435"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="iconPreview"
  type="int"
  transient="false"
@@ -5536,17 +5547,6 @@
  transient="false"
  volatile="false"
  value="16843429"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="iconMenuTheme"
- type="int"
- transient="false"
- volatile="false"
- value="16843435"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -7461,6 +7461,28 @@
  transient="false"
  volatile="false"
  value="16842909"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="statusBarExpandedBackgroundColor"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843436"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="statusBarLatestItemBackground"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843437"
  static="true"
  final="true"
  deprecated="not deprecated"
