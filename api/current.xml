@@ -32642,6 +32642,16 @@
  visibility="public"
 >
 </field>
+<field name="themeStyleName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="thumbnail"
  type="int"
  transient="false"
@@ -35976,6 +35986,8 @@
 >
 <parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
 </parameter>
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
 <parameter name="attrs" type="android.util.AttributeSet">
 </parameter>
 <exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
@@ -36008,6 +36020,8 @@
  visibility="public"
 >
 <parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="res" type="android.content.res.Resources">
 </parameter>
 <parameter name="attrs" type="android.util.AttributeSet">
 </parameter>
