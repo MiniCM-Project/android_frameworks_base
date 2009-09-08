@@ -32653,7 +32653,7 @@
 >
 </field>
 <field name="thumbnail"
- type="int"
+ type="java.lang.String"
  transient="false"
  volatile="false"
  static="false"
