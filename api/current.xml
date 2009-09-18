@@ -32240,6 +32240,16 @@
  visibility="public"
 >
 </field>
+<field name="preview"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ringtoneFileName"
  type="java.lang.String"
  transient="false"
@@ -58741,7 +58751,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.0010f"
+ value="0.001f"
  static="true"
  final="true"
  deprecated="not deprecated"
