@@ -29182,17 +29182,6 @@
  visibility="public"
 >
 </field>
-<field name="CATEGORY_THEME_PACKAGE_INSTALLED_STATE_CHANGE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;com.tmobile.intent.category.THEME_PACKAGE_INSTALL_STATE_CHANGE&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="CATEGORY_UNIT_TEST"
  type="java.lang.String"
  transient="false"
@@ -58751,7 +58740,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.001f"
+ value="0.0010f"
  static="true"
  final="true"
  deprecated="not deprecated"
