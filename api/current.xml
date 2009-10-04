@@ -11828,6 +11828,17 @@
  visibility="public"
 >
 </field>
+<field name="global_action_reboot"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17040077"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="httpErrorBadUrl"
  type="int"
  transient="false"
@@ -11877,6 +11888,39 @@
  transient="false"
  volatile="false"
  value="17039371"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="reboot_confirm"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17040076"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="reboot_progress"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17040075"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="reboot_system"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17040074"
  static="true"
  final="true"
  deprecated="not deprecated"
