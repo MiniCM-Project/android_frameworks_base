@@ -1758,6 +1758,17 @@
  visibility="public"
 >
 </field>
+<field name="alertDialogTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843448"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="allowBackup"
  type="int"
  transient="false"
@@ -2110,6 +2121,17 @@
  visibility="public"
 >
 </field>
+<field name="bottomLeftStrip"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843451"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="bottomMedium"
  type="int"
  transient="false"
@@ -2137,6 +2159,17 @@
  transient="false"
  volatile="false"
  value="16843180"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="bottomRightStrip"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843452"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2192,6 +2225,28 @@
  transient="false"
  volatile="false"
  value="16842825"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="buttonStyleTimePickerDown"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843457"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="buttonStyleTimePickerUp"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843456"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -2913,6 +2968,17 @@
  visibility="public"
 >
 </field>
+<field name="dialogTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843447"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="dialogTitle"
  type="int"
  transient="false"
@@ -3435,6 +3501,17 @@
  transient="false"
  volatile="false"
  value="16842863"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="expandedMenuTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843459"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -4139,6 +4216,17 @@
  transient="false"
  volatile="false"
  value="16842754"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="iconMenuTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843460"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -5289,6 +5377,28 @@
  visibility="public"
 >
 </field>
+<field name="listItemBackground"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843446"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="listItemTextViewStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843450"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="listPreferredItemHeight"
  type="int"
  transient="false"
@@ -5514,6 +5624,17 @@
  transient="false"
  volatile="false"
  value="16843230"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="menuItemBackground"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843458"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -6983,6 +7104,17 @@
  visibility="public"
 >
 </field>
+<field name="searchDialogTheme"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843449"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="searchMode"
  type="int"
  transient="false"
@@ -7742,6 +7874,17 @@
  visibility="public"
 >
 </field>
+<field name="tabIndicatorStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843453"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="tabWidgetStyle"
  type="int"
  transient="false"
@@ -8055,6 +8198,17 @@
  transient="false"
  volatile="false"
  value="16842821"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="textAppearanceTab"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843454"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -8418,6 +8572,17 @@
  transient="false"
  volatile="false"
  value="16843265"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="timePickerInputStyle"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843455"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -13253,6 +13418,17 @@
  visibility="public"
 >
 </field>
+<field name="Widget_EditText_TimePicker"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973926"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="Widget_ExpandableListView"
  type="int"
  transient="false"
@@ -13489,6 +13665,17 @@
  transient="false"
  volatile="false"
  value="16973864"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="Widget_TabIndicator"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16973925"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -39818,6 +40005,17 @@
  visibility="public"
 >
 </field>
+<field name="PLUTO_ISTHEMEABLE_ATTRIBUTE_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;isThemeable&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="className"
  type="java.lang.String"
  transient="false"
@@ -40005,6 +40203,234 @@
 <parameter name="ab" type="android.content.pm.ApplicationInfo">
 </parameter>
 </method>
+</class>
+<class name="BaseThemeInfo"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.os.Parcelable">
+</implements>
+<constructor name="BaseThemeInfo"
+ type="android.content.pm.BaseThemeInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</constructor>
+<constructor name="BaseThemeInfo"
+ type="android.content.pm.BaseThemeInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method name="changeDrmFlagIfNeeded"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="resourcePath" type="java.lang.String">
+</parameter>
+</method>
+<method name="describeContents"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="writeToParcel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field name="author"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="copyright"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="favesAppImageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="favesImageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="name"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="notificationRingtoneFileName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="notificationRingtoneName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="preview"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ringtoneFileName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ringtoneName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="soundPackName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="styleResourceId"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="themeId"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="themeStyleName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="thumbnail"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="wallpaperImageName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="ComponentInfo"
  extends="android.content.pm.PackageItemInfo"
@@ -40748,6 +41174,16 @@
  visibility="public"
 >
 </field>
+<field name="isThemeApk"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="packageName"
  type="java.lang.String"
  transient="false"
@@ -41411,6 +41847,17 @@
 >
 <parameter name="flags" type="int">
 </parameter>
+</method>
+<method name="getInstalledThemePackages"
+ return="java.util.List&lt;android.content.pm.PackageInfo&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 </method>
 <method name="getInstallerPackageName"
  return="java.lang.String"
@@ -43336,6 +43783,76 @@
 <parameter name="parcelableFlags" type="int">
 </parameter>
 </method>
+<field name="CREATOR"
+ type="android.os.Parcelable.Creator"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="SoundsInfo"
+ extends="android.content.pm.BaseThemeInfo"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="SoundsInfo"
+ type="android.content.pm.SoundsInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</constructor>
+<field name="CREATOR"
+ type="android.os.Parcelable.Creator"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ThemeInfo"
+ extends="android.content.pm.BaseThemeInfo"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ThemeInfo"
+ type="android.content.pm.ThemeInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</constructor>
 <field name="CREATOR"
  type="android.os.Parcelable.Creator"
  transient="false"
@@ -132925,6 +133442,17 @@
 <parameter name="flags" type="int">
 </parameter>
 </method>
+<method name="getInstalledThemePackages"
+ return="java.util.List&lt;android.content.pm.PackageInfo&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getInstallerPackageName"
  return="java.lang.String"
  abstract="false"
@@ -186338,6 +186866,20 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 <parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="LinearLayout"
+ type="android.widget.LinearLayout"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
 </parameter>
 </constructor>
 <method name="getBaselineAlignedChildIndex"
