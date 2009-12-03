@@ -68963,6 +68963,94 @@
  visibility="public"
 >
 </field>
+<field name="ISO_AUTO"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;auto&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_HJR"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO_HJR&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_100"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO100&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_200"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO200&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_400"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO400&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_800"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO800&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LENSSHADE_ENABLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;enable&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LENSSHADE_DISABLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;disable&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="WHITE_BALANCE_AUTO"
  type="java.lang.String"
  transient="false"
