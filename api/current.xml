@@ -181984,7 +181984,7 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="AllocationLimitError"
@@ -182190,7 +182190,7 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="PotentialDeadlockError"
@@ -182217,7 +182217,7 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="StaleDexCacheError"
@@ -182244,7 +182244,7 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="TemporaryDirectory"
@@ -182287,7 +182287,7 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="TouchDex"
@@ -182330,7 +182330,7 @@
  abstract="false"
  static="false"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <method name="dumpHprofData"
@@ -182834,7 +182834,7 @@
  abstract="false"
  static="false"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <method name="gcSoftReferences"
@@ -182935,7 +182935,7 @@
  abstract="false"
  static="false"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="VMStack"
@@ -183002,7 +183002,7 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <method name="fork"
@@ -186790,7 +186790,7 @@
 <method name="valid"
  return="boolean"
  abstract="false"
- native="true"
+ native="false"
  synchronized="false"
  static="false"
  final="false"
@@ -191913,7 +191913,7 @@
  return="java.nio.channels.FileChannel"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="true"
  deprecated="not deprecated"
@@ -200783,7 +200783,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="i" type="int">
+<parameter name="value" type="int">
 </parameter>
 </method>
 <method name="toString"
@@ -201583,9 +201583,9 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="y" type="double">
-</parameter>
 <parameter name="x" type="double">
+</parameter>
+<parameter name="y" type="double">
 </parameter>
 </method>
 <method name="cbrt"
@@ -258169,7 +258169,7 @@
 </parameter>
 <parameter name="buffer" type="java.lang.StringBuffer">
 </parameter>
-<parameter name="field" type="java.text.FieldPosition">
+<parameter name="fieldPos" type="java.text.FieldPosition">
 </parameter>
 </method>
 <method name="get2DigitYearStart"
@@ -264709,7 +264709,7 @@
  return="boolean"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -264735,7 +264735,7 @@
  return="boolean"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -264759,7 +264759,7 @@
  return="java.util.Set&lt;java.util.Map.Entry&lt;K, V&gt;&gt;"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -264794,7 +264794,7 @@
  return="java.util.Set&lt;K&gt;"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -264879,7 +264879,7 @@
  return="java.util.Collection&lt;V&gt;"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -265254,7 +265254,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="s" type="int">
+<parameter name="initialCapacity" type="int">
 </parameter>
 </constructor>
 <constructor name="LinkedHashMap"
@@ -265264,23 +265264,9 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="s" type="int">
+<parameter name="initialCapacity" type="int">
 </parameter>
-<parameter name="lf" type="float">
-</parameter>
-</constructor>
-<constructor name="LinkedHashMap"
- type="java.util.LinkedHashMap"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="s" type="int">
-</parameter>
-<parameter name="lf" type="float">
-</parameter>
-<parameter name="order" type="boolean">
+<parameter name="loadFactor" type="float">
 </parameter>
 </constructor>
 <constructor name="LinkedHashMap"
@@ -265290,7 +265276,21 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="m" type="java.util.Map&lt;? extends K, ? extends V&gt;">
+<parameter name="initialCapacity" type="int">
+</parameter>
+<parameter name="loadFactor" type="float">
+</parameter>
+<parameter name="accessOrder" type="boolean">
+</parameter>
+</constructor>
+<constructor name="LinkedHashMap"
+ type="java.util.LinkedHashMap"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="map" type="java.util.Map&lt;? extends K, ? extends V&gt;">
 </parameter>
 </constructor>
 <method name="removeEldestEntry"
@@ -266943,7 +266943,7 @@
  return="void"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -266956,7 +266956,7 @@
  return="void"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -266967,7 +266967,7 @@
  return="int"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -267002,7 +267002,7 @@
  return="boolean"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -267037,7 +267037,7 @@
  return="void"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -269382,7 +269382,7 @@
  return="E"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -269838,24 +269838,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="isDaemon" type="boolean">
-</parameter>
-</constructor>
-<constructor name="Timer"
- type="java.util.Timer"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<constructor name="Timer"
- type="java.util.Timer"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
 <parameter name="name" type="java.lang.String">
 </parameter>
 <parameter name="isDaemon" type="boolean">
@@ -269870,6 +269852,24 @@
 >
 <parameter name="name" type="java.lang.String">
 </parameter>
+</constructor>
+<constructor name="Timer"
+ type="java.util.Timer"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isDaemon" type="boolean">
+</parameter>
+</constructor>
+<constructor name="Timer"
+ type="java.util.Timer"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 </constructor>
 <method name="cancel"
  return="void"
@@ -270748,7 +270748,7 @@
  return="E"
  abstract="false"
  native="false"
- synchronized="true"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -271228,7 +271228,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="offer"
@@ -271241,7 +271241,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <parameter name="timeout" type="long">
 </parameter>
@@ -271299,7 +271299,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <exception name="InterruptedException" type="java.lang.InterruptedException">
 </exception>
@@ -271359,7 +271359,20 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
+</parameter>
+</method>
+<method name="contains"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o" type="java.lang.Object">
 </parameter>
 </method>
 <method name="drainTo"
@@ -271400,7 +271413,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="offer"
@@ -271413,7 +271426,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <parameter name="timeout" type="long">
 </parameter>
@@ -271449,7 +271462,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <exception name="InterruptedException" type="java.lang.InterruptedException">
 </exception>
@@ -271464,6 +271477,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="remove"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o" type="java.lang.Object">
+</parameter>
 </method>
 <method name="take"
  return="E"
@@ -271682,7 +271708,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="t" type="java.util.Map&lt;? extends K, ? extends V&gt;">
+<parameter name="m" type="java.util.Map&lt;? extends K, ? extends V&gt;">
 </parameter>
 </constructor>
 <method name="contains"
@@ -271845,7 +271871,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="peek"
@@ -271995,7 +272021,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="array" type="E[]">
+<parameter name="toCopyIn" type="E[]">
 </parameter>
 </constructor>
 <method name="add"
@@ -272023,7 +272049,7 @@
 >
 <parameter name="index" type="int">
 </parameter>
-<parameter name="e" type="E">
+<parameter name="element" type="E">
 </parameter>
 </method>
 <method name="addAll"
@@ -272151,9 +272177,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="e" type="E">
-</parameter>
-<parameter name="index" type="int">
+<parameter name="o" type="java.lang.Object">
 </parameter>
 </method>
 <method name="indexOf"
@@ -272166,7 +272190,9 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="java.lang.Object">
+<parameter name="e" type="E">
+</parameter>
+<parameter name="index" type="int">
 </parameter>
 </method>
 <method name="isEmpty"
@@ -272201,9 +272227,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="e" type="E">
-</parameter>
-<parameter name="index" type="int">
+<parameter name="o" type="java.lang.Object">
 </parameter>
 </method>
 <method name="lastIndexOf"
@@ -272216,7 +272240,9 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="java.lang.Object">
+<parameter name="e" type="E">
+</parameter>
+<parameter name="index" type="int">
 </parameter>
 </method>
 <method name="listIterator"
@@ -272307,7 +272333,7 @@
 >
 <parameter name="index" type="int">
 </parameter>
-<parameter name="e" type="E">
+<parameter name="element" type="E">
 </parameter>
 </method>
 <method name="size"
@@ -272671,7 +272697,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="offer"
@@ -272684,7 +272710,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <parameter name="timeout" type="long">
 </parameter>
@@ -272712,12 +272738,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="time" type="long">
-</parameter>
-<parameter name="unit" type="java.util.concurrent.TimeUnit">
-</parameter>
-<exception name="InterruptedException" type="java.lang.InterruptedException">
-</exception>
 </method>
 <method name="poll"
  return="E"
@@ -272729,6 +272749,12 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
 </method>
 <method name="put"
  return="void"
@@ -272740,7 +272766,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="remainingCapacity"
@@ -273811,7 +273837,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <parameter name="timeout" type="long">
 </parameter>
@@ -273830,7 +273856,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="peek"
@@ -273882,7 +273908,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <exception name="InterruptedException" type="java.lang.InterruptedException">
 </exception>
@@ -274035,7 +274061,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="offer"
@@ -274048,7 +274074,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 <parameter name="timeout" type="long">
 </parameter>
@@ -274104,7 +274130,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="remainingCapacity"
@@ -274834,7 +274860,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="o" type="E">
+<parameter name="e" type="E">
 </parameter>
 </method>
 <method name="peek"
@@ -275539,7 +275565,7 @@
  extends="java.lang.Enum"
  abstract="false"
  static="false"
- final="true"
+ final="false"
  deprecated="not deprecated"
  visibility="public"
 >
@@ -275553,9 +275579,9 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="duration" type="long">
+<parameter name="sourceDuration" type="long">
 </parameter>
-<parameter name="unit" type="java.util.concurrent.TimeUnit">
+<parameter name="sourceUnit" type="java.util.concurrent.TimeUnit">
 </parameter>
 </method>
 <method name="sleep"
@@ -277591,8 +277617,51 @@
 </package>
 <package name="java.util.concurrent.locks"
 >
-<class name="AbstractQueuedSynchronizer"
+<class name="AbstractOwnableSynchronizer"
  extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility=""
+>
+<implements name="java.io.Serializable">
+</implements>
+<constructor name="AbstractOwnableSynchronizer"
+ type="java.util.concurrent.locks.AbstractOwnableSynchronizer"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</constructor>
+<method name="getExclusiveOwnerThread"
+ return="java.lang.Thread"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="setExclusiveOwnerThread"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="t" type="java.lang.Thread">
+</parameter>
+</method>
+</class>
+<class name="AbstractQueuedSynchronizer"
+ extends="java.util.concurrent.locks.AbstractOwnableSynchronizer"
  abstract="true"
  static="false"
  final="false"
@@ -285164,7 +285233,11 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="val" type="int">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
 </parameter>
 </method>
 <method name="update"
@@ -285177,11 +285250,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="buf" type="byte[]">
-</parameter>
-<parameter name="off" type="int">
-</parameter>
-<parameter name="nbytes" type="int">
+<parameter name="val" type="int">
 </parameter>
 </method>
 </interface>
@@ -304009,7 +304078,7 @@
  return="javax.net.ServerSocketFactory"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="true"
  final="false"
  deprecated="not deprecated"
@@ -304799,7 +304868,7 @@
  return="javax.net.SocketFactory"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="true"
  final="false"
  deprecated="not deprecated"
