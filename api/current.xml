@@ -71952,6 +71952,17 @@
  visibility="public"
 >
 </method>
+<method name="getAutoExposure"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getColorEffect"
  return="java.lang.String"
  abstract="false"
@@ -72197,6 +72208,17 @@
 >
 </method>
 <method name="getSupportedAntibanding"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSupportedAutoexposure"
  return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
  native="false"
@@ -72481,6 +72503,19 @@
  visibility="public"
 >
 <parameter name="antibanding" type="java.lang.String">
+</parameter>
+</method>
+<method name="setAutoExposure"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
 </parameter>
 </method>
 <method name="setColorEffect"
@@ -72839,6 +72874,39 @@
  transient="false"
  volatile="false"
  value="&quot;off&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="AUTO_EXPOSURE_CENTER_WEIGHTED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;center-weighted&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="AUTO_EXPOSURE_FRAME_AVG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;frame-average&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="AUTO_EXPOSURE_SPOT_METERING"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;spot-metering&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
