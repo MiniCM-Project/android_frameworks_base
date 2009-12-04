@@ -73122,6 +73122,17 @@
  visibility="public"
 >
 </field>
+<field name="FOCUS_MODE_NORMAL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;normal&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ISO_100"
  type="java.lang.String"
  transient="false"
