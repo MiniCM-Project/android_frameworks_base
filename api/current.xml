@@ -68919,6 +68919,17 @@
  visibility="public"
 >
 </field>
+<field name="FOCUS_MODE_NORMAL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;normal&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="SCENE_MODE_ACTION"
  type="java.lang.String"
  transient="false"
