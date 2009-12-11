@@ -72531,6 +72531,19 @@
 <parameter name="value" type="java.lang.String">
 </parameter>
 </method>
+<method name="setExifDateTime"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dateTime" type="java.lang.String">
+</parameter>
+</method>
 <method name="setExposureCompensation"
  return="void"
  abstract="false"
@@ -72583,6 +72596,19 @@
 <parameter name="altitude" type="double">
 </parameter>
 </method>
+<method name="setGpsAltitudeRef"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="altRef" type="double">
+</parameter>
+</method>
 <method name="setGpsLatitude"
  return="void"
  abstract="false"
@@ -72594,6 +72620,19 @@
  visibility="public"
 >
 <parameter name="latitude" type="double">
+</parameter>
+</method>
+<method name="setGpsLatitudeRef"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="latRef" type="java.lang.String">
 </parameter>
 </method>
 <method name="setGpsLongitude"
@@ -72609,6 +72648,19 @@
 <parameter name="longitude" type="double">
 </parameter>
 </method>
+<method name="setGpsLongitudeRef"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="lonRef" type="java.lang.String">
+</parameter>
+</method>
 <method name="setGpsProcessingMethod"
  return="void"
  abstract="false"
@@ -72620,6 +72672,19 @@
  visibility="public"
 >
 <parameter name="processing_method" type="java.lang.String">
+</parameter>
+</method>
+<method name="setGpsStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="status" type="double">
 </parameter>
 </method>
 <method name="setGpsTimestamp"
