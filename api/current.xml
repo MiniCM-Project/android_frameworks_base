@@ -53895,6 +53895,17 @@
  visibility="public"
 >
 </field>
+<field name="YCbCr_422_I"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="20"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="YCbCr_422_SP"
  type="int"
  transient="false"
@@ -56521,7 +56532,7 @@
  type="android.graphics.drawable.BitmapDrawable"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="filepath" type="java.lang.String">
@@ -56534,6 +56545,30 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="filepath" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="BitmapDrawable"
+ type="android.graphics.drawable.BitmapDrawable"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+</constructor>
+<constructor name="BitmapDrawable"
+ type="android.graphics.drawable.BitmapDrawable"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
 <parameter name="is" type="java.io.InputStream">
 </parameter>
 </constructor>
@@ -57071,6 +57106,27 @@
 <parameter name="is" type="java.io.InputStream">
 </parameter>
 <parameter name="srcName" type="java.lang.String">
+</parameter>
+</method>
+<method name="createFromResourceStream"
+ return="android.graphics.drawable.Drawable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="value" type="android.util.TypedValue">
+</parameter>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="srcName" type="java.lang.String">
+</parameter>
+<parameter name="opts" type="android.graphics.BitmapFactory.Options">
 </parameter>
 </method>
 <method name="createFromStream"
@@ -57690,6 +57746,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="newDrawable"
+ return="android.graphics.drawable.Drawable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
 </method>
 </class>
 <class name="DrawableContainer"
