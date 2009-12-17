@@ -15139,6 +15139,17 @@
  visibility="public"
 >
 </method>
+<method name="getMemoryClass"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getMemoryInfo"
  return="void"
  abstract="false"
@@ -15150,6 +15161,19 @@
  visibility="public"
 >
 <parameter name="outInfo" type="android.app.ActivityManager.MemoryInfo">
+</parameter>
+</method>
+<method name="getProcessMemoryInfo"
+ return="android.os.Debug.MemoryInfo[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pids" type="int[]">
 </parameter>
 </method>
 <method name="getProcessesInErrorState"
@@ -15190,6 +15214,21 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="getRunningServiceControlPanel"
+ return="android.app.PendingIntent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="service" type="android.content.ComponentName">
+</parameter>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
 </method>
 <method name="getRunningServices"
  return="java.util.List&lt;android.app.ActivityManager.RunningServiceInfo&gt;"
@@ -15760,7 +15799,70 @@
  visibility="public"
 >
 </field>
+<field name="REASON_PROVIDER_IN_USE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="REASON_SERVICE_IN_USE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="REASON_UNKNOWN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="0"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="importance"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="importanceReasonCode"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="importanceReasonComponent"
+ type="android.content.ComponentName"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="importanceReasonPid"
  type="int"
  transient="false"
  volatile="false"
@@ -15803,6 +15905,16 @@
 </field>
 <field name="processName"
  type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="uid"
+ type="int"
  transient="false"
  volatile="false"
  static="false"
@@ -15879,6 +15991,50 @@
  visibility="public"
 >
 </field>
+<field name="FLAG_FOREGROUND"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_PERSISTENT_PROCESS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="8"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_STARTED"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_SYSTEM_PROCESS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="activeSince"
  type="long"
  transient="false"
@@ -15899,7 +16055,37 @@
  visibility="public"
 >
 </field>
+<field name="clientLabel"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="clientPackage"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="crashCount"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="flags"
  type="int"
  transient="false"
  volatile="false"
@@ -15971,6 +16157,16 @@
 </field>
 <field name="started"
  type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="uid"
+ type="int"
  transient="false"
  volatile="false"
  static="false"
@@ -20139,6 +20335,17 @@
  visibility="public"
 >
 </field>
+<field name="FLAG_FOREGROUND_SERVICE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="64"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="FLAG_INSISTENT"
  type="int"
  transient="false"
@@ -20388,6 +20595,21 @@
 <parameter name="id" type="int">
 </parameter>
 </method>
+<method name="cancel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+</method>
 <method name="cancelAll"
  return="void"
  abstract="false"
@@ -20409,6 +20631,23 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="id" type="int">
+</parameter>
+<parameter name="notification" type="android.app.Notification">
+</parameter>
+</method>
+<method name="notify"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
 <parameter name="id" type="int">
 </parameter>
 <parameter name="notification" type="android.app.Notification">
@@ -21652,10 +21891,27 @@
  synchronized="false"
  static="false"
  final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="startId" type="int">
+</parameter>
+</method>
+<method name="onStartCommand"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
  deprecated="not deprecated"
  visibility="public"
 >
 <parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="flags" type="int">
 </parameter>
 <parameter name="startId" type="int">
 </parameter>
@@ -21680,10 +21936,38 @@
  synchronized="false"
  static="false"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="isForeground" type="boolean">
+</parameter>
+</method>
+<method name="startForeground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="int">
+</parameter>
+<parameter name="notification" type="android.app.Notification">
+</parameter>
+</method>
+<method name="stopForeground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="removeNotification" type="boolean">
 </parameter>
 </method>
 <method name="stopSelf"
@@ -21723,6 +22007,83 @@
 <parameter name="startId" type="int">
 </parameter>
 </method>
+<field name="START_CONTINUATION_MASK"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="15"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="START_FLAG_REDELIVERY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="START_FLAG_RETRY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="START_NOT_STICKY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="START_REDELIVER_INTENT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="START_STICKY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="START_STICKY_COMPATIBILITY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="0"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="TabActivity"
  extends="android.app.ActivityGroup"
@@ -23110,6 +23471,28 @@
 >
 <parameter name="makeMap" type="boolean">
 </parameter>
+</method>
+<method name="isInitialStickyBroadcast"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isOrderedBroadcast"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
 </method>
 <method name="onReceive"
  return="void"
@@ -29082,6 +29465,17 @@
  visibility="public"
 >
 </field>
+<field name="ACTION_DOCK_EVENT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.action.DOCK_EVENT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_EDIT"
  type="java.lang.String"
  transient="false"
@@ -29786,11 +30180,33 @@
  visibility="public"
 >
 </field>
+<field name="CATEGORY_CAR_DOCK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.category.CAR_DOCK&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="CATEGORY_DEFAULT"
  type="java.lang.String"
  transient="false"
  volatile="false"
  value="&quot;android.intent.category.DEFAULT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CATEGORY_DESK_DOCK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.category.DESK_DOCK&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -29994,11 +30410,66 @@
  visibility="public"
 >
 </field>
+<field name="EXTRA_CHANGED_COMPONENT_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.extra.changed_component_name&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="EXTRA_DATA_REMOVED"
  type="java.lang.String"
  transient="false"
  volatile="false"
  value="&quot;android.intent.extra.DATA_REMOVED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_DOCK_STATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.extra.DOCK_STATE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_DOCK_STATE_CAR"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_DOCK_STATE_DESK"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_DOCK_STATE_UNDOCKED"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="0"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -30021,6 +30492,17 @@
  transient="false"
  volatile="false"
  value="&quot;android.intent.extra.EMAIL&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_INITIAL_INTENTS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.extra.INITIAL_INTENTS&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -30054,6 +30536,17 @@
  transient="false"
  volatile="false"
  value="&quot;android.intent.extra.PHONE_NUMBER&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_REMOTE_INTENT_TOKEN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.extra.remote_intent_token&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -30324,6 +30817,17 @@
  visibility="public"
 >
 </field>
+<field name="FLAG_ACTIVITY_NO_ANIMATION"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="65536"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="FLAG_ACTIVITY_NO_HISTORY"
  type="int"
  transient="false"
@@ -30439,6 +30943,17 @@
  transient="false"
  volatile="false"
  value="1073741824"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="METADATA_DOCK_HOME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.dock_home&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -32442,6 +32957,17 @@
  transient="false"
  volatile="false"
  value="32"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_FINISH_ON_CLOSE_SYSTEM_DIALOGS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="256"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -89626,6 +90152,116 @@
  visibility="public"
 >
 </field>
+<field name="EXTRA_HEALTH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;health&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_ICON_SMALL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;icon-small&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_LEVEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;level&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_PLUGGED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;plugged&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_PRESENT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;present&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_SCALE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;scale&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_STATUS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;status&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_TECHNOLOGY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;technology&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_TEMPERATURE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;temperature&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_VOLTAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;voltage&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="Binder"
  extends="java.lang.Object"
@@ -92245,6 +92881,8 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<implements name="android.os.Parcelable">
+</implements>
 <constructor name="Debug.MemoryInfo"
  type="android.os.Debug.MemoryInfo"
  static="false"
@@ -92253,6 +92891,88 @@
  visibility="public"
 >
 </constructor>
+<method name="describeContents"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTotalPrivateDirty"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTotalPss"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTotalSharedDirty"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="readFromParcel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</method>
+<method name="writeToParcel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field name="CREATOR"
+ type="android.os.Parcelable.Creator"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="dalvikPrivateDirty"
  type="int"
  transient="false"
