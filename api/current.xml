@@ -13834,6 +13834,17 @@
 <parameter name="data" type="android.content.Intent">
 </parameter>
 </method>
+<method name="onBackPressed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onChildTitleChanged"
  return="void"
  abstract="false"
@@ -14038,6 +14049,21 @@
 >
 </method>
 <method name="onKeyDown"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="onKeyLongPress"
  return="boolean"
  abstract="false"
  native="false"
@@ -14886,6 +14912,58 @@
 </parameter>
 <parameter name="requestCode" type="int">
 </parameter>
+</method>
+<method name="startIntentSenderForResult"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.IntentSender">
+</parameter>
+<parameter name="requestCode" type="int">
+</parameter>
+<parameter name="fillInIntent" type="android.content.Intent">
+</parameter>
+<parameter name="flagsMask" type="int">
+</parameter>
+<parameter name="flagsValues" type="int">
+</parameter>
+<parameter name="extraFlags" type="int">
+</parameter>
+<exception name="IntentSender.SendIntentException" type="android.content.IntentSender.SendIntentException">
+</exception>
+</method>
+<method name="startIntentSenderFromChild"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="child" type="android.app.Activity">
+</parameter>
+<parameter name="intent" type="android.content.IntentSender">
+</parameter>
+<parameter name="requestCode" type="int">
+</parameter>
+<parameter name="fillInIntent" type="android.content.Intent">
+</parameter>
+<parameter name="flagsMask" type="int">
+</parameter>
+<parameter name="flagsValues" type="int">
+</parameter>
+<parameter name="extraFlags" type="int">
+</parameter>
+<exception name="IntentSender.SendIntentException" type="android.content.IntentSender.SendIntentException">
+</exception>
 </method>
 <method name="startManagingCursor"
  return="void"
@@ -17746,6 +17824,28 @@
  visibility="public"
 >
 </method>
+<method name="onAttachedToWindow"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onBackPressed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onContentChanged"
  return="void"
  abstract="false"
@@ -17854,7 +17954,33 @@
 <parameter name="featureId" type="int">
 </parameter>
 </method>
+<method name="onDetachedFromWindow"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onKeyDown"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="onKeyLongPress"
  return="boolean"
  abstract="false"
  native="false"
@@ -19637,6 +19763,19 @@
 <parameter name="intent" type="android.content.Intent">
 </parameter>
 </method>
+<method name="setIntentRedelivery"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
 </class>
 <class name="KeyguardManager"
  extends="java.lang.Object"
@@ -19798,6 +19937,30 @@
  final="false"
  deprecated="not deprecated"
  visibility="public"
+>
+</method>
+<method name="onQueryPackageManager"
+ return="java.util.List&lt;android.content.pm.ResolveInfo&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="queryIntent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="onSetContentView"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
 >
 </method>
 </class>
@@ -21419,6 +21582,23 @@
  visibility="public"
 >
 </method>
+<method name="triggerSearch"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="query" type="java.lang.String">
+</parameter>
+<parameter name="launchActivity" type="android.content.ComponentName">
+</parameter>
+<parameter name="appSearchData" type="android.os.Bundle">
+</parameter>
+</method>
 <field name="ACTION_KEY"
  type="java.lang.String"
  transient="false"
@@ -21688,6 +21868,17 @@
  transient="false"
  volatile="false"
  value="&quot;_-1&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SUGGEST_PARAMETER_LIMIT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;limit&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -24315,6 +24506,21 @@
 <parameter name="selectionArgs" type="java.lang.String[]">
 </parameter>
 </method>
+<method name="getResourceId"
+ return="android.content.ContentResolver.OpenResourceIdResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+</exception>
+</method>
 <method name="getType"
  return="java.lang.String"
  abstract="false"
@@ -24671,6 +24877,43 @@
  value="&quot;upload&quot;"
  static="true"
  final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="ContentResolver.OpenResourceIdResult"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ContentResolver.OpenResourceIdResult"
+ type="android.content.ContentResolver.OpenResourceIdResult"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<field name="id"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="r"
+ type="android.content.res.Resources"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
  deprecated="not deprecated"
  visibility="public"
 >
@@ -26097,6 +26340,29 @@
 <parameter name="intent" type="android.content.Intent">
 </parameter>
 </method>
+<method name="sendStickyOrderedBroadcast"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="resultReceiver" type="android.content.BroadcastReceiver">
+</parameter>
+<parameter name="scheduler" type="android.os.Handler">
+</parameter>
+<parameter name="initialCode" type="int">
+</parameter>
+<parameter name="initialData" type="java.lang.String">
+</parameter>
+<parameter name="initialExtras" type="android.os.Bundle">
+</parameter>
+</method>
 <method name="setTheme"
  return="void"
  abstract="true"
@@ -26169,6 +26435,29 @@
 </parameter>
 <parameter name="arguments" type="android.os.Bundle">
 </parameter>
+</method>
+<method name="startIntentSender"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.IntentSender">
+</parameter>
+<parameter name="fillInIntent" type="android.content.Intent">
+</parameter>
+<parameter name="flagsMask" type="int">
+</parameter>
+<parameter name="flagsValues" type="int">
+</parameter>
+<parameter name="extraFlags" type="int">
+</parameter>
+<exception name="IntentSender.SendIntentException" type="android.content.IntentSender.SendIntentException">
+</exception>
 </method>
 <method name="startService"
  return="android.content.ComponentName"
@@ -27388,6 +27677,29 @@
 <parameter name="intent" type="android.content.Intent">
 </parameter>
 </method>
+<method name="sendStickyOrderedBroadcast"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="resultReceiver" type="android.content.BroadcastReceiver">
+</parameter>
+<parameter name="scheduler" type="android.os.Handler">
+</parameter>
+<parameter name="initialCode" type="int">
+</parameter>
+<parameter name="initialData" type="java.lang.String">
+</parameter>
+<parameter name="initialExtras" type="android.os.Bundle">
+</parameter>
+</method>
 <method name="setTheme"
  return="void"
  abstract="false"
@@ -27460,6 +27772,29 @@
 </parameter>
 <parameter name="arguments" type="android.os.Bundle">
 </parameter>
+</method>
+<method name="startIntentSender"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.IntentSender">
+</parameter>
+<parameter name="fillInIntent" type="android.content.Intent">
+</parameter>
+<parameter name="flagsMask" type="int">
+</parameter>
+<parameter name="flagsValues" type="int">
+</parameter>
+<parameter name="extraFlags" type="int">
+</parameter>
+<exception name="IntentSender.SendIntentException" type="android.content.IntentSender.SendIntentException">
+</exception>
 </method>
 <method name="startService"
  return="android.content.ComponentName"
@@ -62401,6 +62736,17 @@
  visibility="public"
 >
 </constructor>
+<method name="getKeyDispatcherState"
+ return="android.view.KeyEvent.DispatcherState"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onBind"
  return="android.os.IBinder"
  abstract="false"
@@ -63132,6 +63478,21 @@
 >
 </method>
 <method name="onKeyDown"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="onKeyLongPress"
  return="boolean"
  abstract="false"
  native="false"
@@ -117857,6 +118218,29 @@
 <parameter name="intent" type="android.content.Intent">
 </parameter>
 </method>
+<method name="sendStickyOrderedBroadcast"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="resultReceiver" type="android.content.BroadcastReceiver">
+</parameter>
+<parameter name="scheduler" type="android.os.Handler">
+</parameter>
+<parameter name="initialCode" type="int">
+</parameter>
+<parameter name="initialData" type="java.lang.String">
+</parameter>
+<parameter name="initialExtras" type="android.os.Bundle">
+</parameter>
+</method>
 <method name="setTheme"
  return="void"
  abstract="false"
@@ -117929,6 +118313,29 @@
 </parameter>
 <parameter name="arguments" type="android.os.Bundle">
 </parameter>
+</method>
+<method name="startIntentSender"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.IntentSender">
+</parameter>
+<parameter name="fillInIntent" type="android.content.Intent">
+</parameter>
+<parameter name="flagsMask" type="int">
+</parameter>
+<parameter name="flagsValues" type="int">
+</parameter>
+<parameter name="extraFlags" type="int">
+</parameter>
+<exception name="IntentSender.SendIntentException" type="android.content.IntentSender.SendIntentException">
+</exception>
 </method>
 <method name="startService"
  return="android.content.ComponentName"
@@ -136781,7 +137188,7 @@
  type="android.view.KeyEvent"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="origEvent" type="android.view.KeyEvent">
@@ -136838,6 +137245,25 @@
 <parameter name="newRepeat" type="int">
 </parameter>
 </method>
+<method name="changeTimeRepeat"
+ return="android.view.KeyEvent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+<parameter name="eventTime" type="long">
+</parameter>
+<parameter name="newRepeat" type="int">
+</parameter>
+<parameter name="newFlags" type="int">
+</parameter>
+</method>
 <method name="describeContents"
  return="int"
  abstract="false"
@@ -136856,10 +137282,27 @@
  synchronized="false"
  static="false"
  final="true"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="receiver" type="android.view.KeyEvent.Callback">
+</parameter>
+</method>
+<method name="dispatch"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
  deprecated="not deprecated"
  visibility="public"
 >
 <parameter name="receiver" type="android.view.KeyEvent.Callback">
+</parameter>
+<parameter name="state" type="android.view.KeyEvent.DispatcherState">
+</parameter>
+<parameter name="target" type="java.lang.Object">
 </parameter>
 </method>
 <method name="getAction"
@@ -137096,6 +137539,28 @@
  visibility="public"
 >
 </method>
+<method name="isCanceled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isLongPress"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="isModifierKey"
  return="boolean"
  abstract="false"
@@ -137144,6 +137609,28 @@
 </method>
 <method name="isSystem"
  return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isTracking"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="startTracking"
+ return="void"
  abstract="false"
  native="false"
  synchronized="false"
@@ -137211,6 +137698,28 @@
  visibility="public"
 >
 </field>
+<field name="FLAG_CANCELED"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="32"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_CANCELED_LONG_PRESS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="256"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="FLAG_EDITOR_ACTION"
  type="int"
  transient="false"
@@ -137244,11 +137753,44 @@
  visibility="public"
 >
 </field>
+<field name="FLAG_LONG_PRESS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="128"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="FLAG_SOFT_KEYBOARD"
  type="int"
  transient="false"
  volatile="false"
  value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_TRACKING"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="512"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FLAG_VIRTUAL_HARD_KEY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="64"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -138389,6 +138931,21 @@
 <parameter name="event" type="android.view.KeyEvent">
 </parameter>
 </method>
+<method name="onKeyLongPress"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
 <method name="onKeyMultiple"
  return="boolean"
  abstract="true"
@@ -138422,6 +138979,101 @@
 </parameter>
 </method>
 </interface>
+<class name="KeyEvent.DispatcherState"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="KeyEvent.DispatcherState"
+ type="android.view.KeyEvent.DispatcherState"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="handleUpEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="isTracking"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="performedLongPress"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="reset"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="reset"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="target" type="java.lang.Object">
+</parameter>
+</method>
+<method name="startTracking"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+<parameter name="target" type="java.lang.Object">
+</parameter>
+</method>
+</class>
 <class name="LayoutInflater"
  extends="java.lang.Object"
  abstract="true"
@@ -142474,6 +143126,17 @@
  visibility="public"
 >
 </method>
+<method name="getKeyDispatcherState"
+ return="android.view.KeyEvent.DispatcherState"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getLayoutParams"
  return="android.view.ViewGroup.LayoutParams"
  abstract="false"
@@ -143586,6 +144249,21 @@
 </parameter>
 </method>
 <method name="onKeyDown"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method name="onKeyLongPress"
  return="boolean"
  abstract="false"
  native="false"
