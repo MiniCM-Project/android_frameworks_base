@@ -121241,6 +121241,17 @@
  visibility="public"
 >
 </field>
+<field name="TYPE_TEXT_FLAG_NO_SUGGESTIONS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="524288"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="TYPE_TEXT_VARIATION_EMAIL_ADDRESS"
  type="int"
  transient="false"
@@ -140281,6 +140292,19 @@
  visibility="public"
 >
 </method>
+<method name="findPointerIndex"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerId" type="int">
+</parameter>
+</method>
 <method name="getAction"
  return="int"
  abstract="false"
@@ -140362,7 +140386,50 @@
 <parameter name="pos" type="int">
 </parameter>
 </method>
+<method name="getHistoricalPressure"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
+<parameter name="pos" type="int">
+</parameter>
+</method>
 <method name="getHistoricalSize"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pos" type="int">
+</parameter>
+</method>
+<method name="getHistoricalSize"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
+<parameter name="pos" type="int">
+</parameter>
+</method>
+<method name="getHistoricalX"
  return="float"
  abstract="false"
  native="false"
@@ -140385,6 +140452,8 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="pointerIndex" type="int">
+</parameter>
 <parameter name="pos" type="int">
 </parameter>
 </method>
@@ -140398,6 +140467,21 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="pos" type="int">
+</parameter>
+</method>
+<method name="getHistoricalY"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
 <parameter name="pos" type="int">
 </parameter>
 </method>
@@ -140423,6 +140507,30 @@
  visibility="public"
 >
 </method>
+<method name="getPointerCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPointerId"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
+</method>
 <method name="getPressure"
  return="float"
  abstract="false"
@@ -140433,6 +140541,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="getPressure"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
 </method>
 <method name="getRawX"
  return="float"
@@ -140467,6 +140588,19 @@
  visibility="public"
 >
 </method>
+<method name="getSize"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
+</method>
 <method name="getX"
  return="float"
  abstract="false"
@@ -140477,6 +140611,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="getX"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
 </method>
 <method name="getXPrecision"
  return="float"
@@ -140499,6 +140646,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="getY"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pointerIndex" type="int">
+</parameter>
 </method>
 <method name="getYPrecision"
  return="float"
@@ -140562,6 +140722,43 @@
 </parameter>
 <parameter name="action" type="int">
 </parameter>
+<parameter name="pointers" type="int">
+</parameter>
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+<parameter name="pressure" type="float">
+</parameter>
+<parameter name="size" type="float">
+</parameter>
+<parameter name="metaState" type="int">
+</parameter>
+<parameter name="xPrecision" type="float">
+</parameter>
+<parameter name="yPrecision" type="float">
+</parameter>
+<parameter name="deviceId" type="int">
+</parameter>
+<parameter name="edgeFlags" type="int">
+</parameter>
+</method>
+<method name="obtain"
+ return="android.view.MotionEvent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="downTime" type="long">
+</parameter>
+<parameter name="eventTime" type="long">
+</parameter>
+<parameter name="action" type="int">
+</parameter>
 <parameter name="x" type="float">
 </parameter>
 <parameter name="y" type="float">
@@ -140570,6 +140767,19 @@
 </parameter>
 </method>
 <method name="obtain"
+ return="android.view.MotionEvent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="o" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method name="obtainNoHistory"
  return="android.view.MotionEvent"
  abstract="false"
  native="false"
@@ -140686,6 +140896,17 @@
  visibility="public"
 >
 </field>
+<field name="ACTION_MASK"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="255"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_MOVE"
  type="int"
  transient="false"
@@ -140702,6 +140923,116 @@
  transient="false"
  volatile="false"
  value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_1_DOWN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="5"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_1_UP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_2_DOWN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="261"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_2_UP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="262"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_3_DOWN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="517"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_3_UP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="518"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_DOWN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="5"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_ID_MASK"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="65280"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_ID_SHIFT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="8"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_POINTER_UP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="6"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -142334,6 +142665,45 @@
 <parameter name="views" type="java.util.ArrayList&lt;android.view.View&gt;">
 </parameter>
 </method>
+<method name="awakenScrollBars"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="awakenScrollBars"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="startDelay" type="int">
+</parameter>
+</method>
+<method name="awakenScrollBars"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="startDelay" type="int">
+</parameter>
+<parameter name="invalidate" type="boolean">
+</parameter>
+</method>
 <method name="bringToFront"
  return="void"
  abstract="false"
@@ -143950,6 +144320,17 @@
  visibility="public"
 >
 </method>
+<method name="isOpaque"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="isPaddingOffsetRequired"
  return="boolean"
  abstract="false"
@@ -143973,6 +144354,17 @@
 >
 </method>
 <method name="isSaveEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isScrollbarFadingEnabled"
  return="boolean"
  abstract="false"
  native="false"
@@ -144214,6 +144606,19 @@
  synchronized="false"
  static="false"
  final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method name="onDrawScrollBars"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
  deprecated="not deprecated"
  visibility="protected"
 >
@@ -145420,6 +145825,19 @@
  visibility="public"
 >
 <parameter name="isScrollContainer" type="boolean">
+</parameter>
+</method>
+<method name="setScrollbarFadingEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="fadeScrollbars" type="boolean">
 </parameter>
 </method>
 <method name="setSelected"
@@ -146755,6 +147173,17 @@
  visibility="public"
 >
 </method>
+<method name="getScrollBarFadeDuration"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getScrollBarSize"
  return="int"
  abstract="false"
@@ -146763,6 +147192,17 @@
  static="true"
  final="false"
  deprecated="deprecated"
+ visibility="public"
+>
+</method>
+<method name="getScrollDefaultDelay"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
  visibility="public"
 >
 </method>
@@ -147772,6 +148212,17 @@
  visibility="public"
 >
 </method>
+<method name="isChildrenDrawingOrderEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
 <method name="isChildrenDrawnWithCacheEnabled"
  return="boolean"
  abstract="false"
@@ -148155,6 +148606,19 @@
 <parameter name="enabled" type="boolean">
 </parameter>
 </method>
+<method name="setChildrenDrawingOrderEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
 <method name="setChildrenDrawnWithCacheEnabled"
  return="void"
  abstract="false"
@@ -148316,17 +148780,6 @@
  transient="false"
  volatile="false"
  value="34"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="protected"
->
-</field>
-<field name="FLAG_USE_CHILD_DRAWING_ORDER"
- type="int"
- transient="false"
- volatile="false"
- value="1024"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -157936,6 +158389,17 @@
  visibility="public"
 >
 </constructor>
+<method name="getContentDisposition"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getContentLength"
  return="long"
  abstract="false"
@@ -157971,6 +158435,17 @@
 </method>
 <method name="getExpires"
  return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getExpiresString"
+ return="java.lang.String"
  abstract="false"
  native="false"
  synchronized="false"
@@ -158104,6 +158579,23 @@
 <parameter name="w" type="android.webkit.WebView">
 </parameter>
 </constructor>
+<method name="addMessageToConsole"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="lineNumber" type="int">
+</parameter>
+<parameter name="sourceID" type="java.lang.String">
+</parameter>
+</method>
 <method name="createWindow"
  return="android.webkit.WebView"
  abstract="false"
@@ -158156,6 +158648,30 @@
  visibility="public"
 >
 </method>
+<method name="getVisitedHistory"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.lang.String[]&gt;">
+</parameter>
+</method>
+<method name="getWebChromeClient"
+ return="android.webkit.WebChromeClient"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onCloseWindow"
  return="void"
  abstract="false"
@@ -158190,6 +158706,29 @@
 <parameter name="contentLength" type="long">
 </parameter>
 </method>
+<method name="onExceededDatabaseQuota"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="url" type="java.lang.String">
+</parameter>
+<parameter name="databaseIdentifier" type="java.lang.String">
+</parameter>
+<parameter name="currentQuota" type="long">
+</parameter>
+<parameter name="estimatedSize" type="long">
+</parameter>
+<parameter name="totalUsedQuota" type="long">
+</parameter>
+<parameter name="quotaUpdater" type="android.webkit.WebStorage.QuotaUpdater">
+</parameter>
+</method>
 <method name="onFormResubmission"
  return="void"
  abstract="false"
@@ -158203,6 +158742,32 @@
 <parameter name="dontResend" type="android.os.Message">
 </parameter>
 <parameter name="resend" type="android.os.Message">
+</parameter>
+</method>
+<method name="onGeolocationPermissionsHidePrompt"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onGeolocationPermissionsShowPrompt"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="android.webkit.GeolocationPermissions.Callback">
 </parameter>
 </method>
 <method name="onJsAlert"
@@ -158267,6 +158832,17 @@
 <parameter name="defaultValue" type="java.lang.String">
 </parameter>
 </method>
+<method name="onJsTimeout"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onLoadResource"
  return="void"
  abstract="false"
@@ -158319,6 +158895,23 @@
  visibility="public"
 >
 <parameter name="newProgress" type="int">
+</parameter>
+</method>
+<method name="onReachedMaxAppCacheSize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="spaceNeeded" type="long">
+</parameter>
+<parameter name="totalUsedQuota" type="long">
+</parameter>
+<parameter name="quotaUpdater" type="android.webkit.WebStorage.QuotaUpdater">
 </parameter>
 </method>
 <method name="onReceivedError"
@@ -158791,6 +159384,124 @@
 </parameter>
 </method>
 </interface>
+<class name="GeolocationPermissions"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="GeolocationPermissions"
+ type="android.webkit.GeolocationPermissions"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="allow"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+</method>
+<method name="clear"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+</method>
+<method name="clearAll"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAllowed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.lang.Boolean&gt;">
+</parameter>
+</method>
+<method name="getInstance"
+ return="android.webkit.GeolocationPermissions"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOrigins"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.util.Set&gt;">
+</parameter>
+</method>
+</class>
+<interface name="GeolocationPermissions.Callback"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="invoke"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="allow" type="boolean">
+</parameter>
+<parameter name="remember" type="boolean">
+</parameter>
+</method>
+</interface>
 <class name="HttpAuthHandler"
  extends="android.os.Handler"
  abstract="false"
@@ -159011,14 +159722,14 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="Plugin"
  type="android.webkit.Plugin"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="name" type="java.lang.String">
@@ -159037,7 +159748,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="context" type="android.content.Context">
@@ -159050,7 +159761,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159061,7 +159772,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159072,7 +159783,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159083,7 +159794,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159094,7 +159805,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="handler" type="android.webkit.Plugin.PreferencesClickHandler">
@@ -159107,7 +159818,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="description" type="java.lang.String">
@@ -159120,7 +159831,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="fileName" type="java.lang.String">
@@ -159133,7 +159844,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="name" type="java.lang.String">
@@ -159146,7 +159857,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="path" type="java.lang.String">
@@ -159179,14 +159890,14 @@
  abstract="false"
  static="false"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="PluginData"
  type="android.webkit.PluginData"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="stream" type="java.io.InputStream">
@@ -159205,7 +159916,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159216,7 +159927,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159227,7 +159938,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159238,7 +159949,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159248,14 +159959,14 @@
  abstract="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="PluginList"
  type="android.webkit.PluginList"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </constructor>
@@ -159266,7 +159977,7 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="plugin" type="android.webkit.Plugin">
@@ -159279,7 +159990,7 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159290,7 +160001,7 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -159301,7 +160012,7 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="context" type="android.content.Context">
@@ -159316,13 +160027,51 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="plugin" type="android.webkit.Plugin">
 </parameter>
 </method>
 </class>
+<interface name="PluginStub"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getEmbeddedView"
+ return="android.view.View"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="NPP" type="int">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getFullScreenView"
+ return="android.view.View"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="NPP" type="int">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+</interface>
 <class name="SslErrorHandler"
  extends="android.os.Handler"
  abstract="false"
@@ -159593,7 +160342,7 @@
  abstract="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <method name="getPluginData"
@@ -159603,7 +160352,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="url" type="java.lang.String">
@@ -159632,7 +160381,7 @@
  abstract="false"
  static="false"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <constructor name="UrlInterceptRegistry"
@@ -159650,7 +160399,7 @@
  synchronized="true"
  static="true"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="url" type="java.lang.String">
@@ -159680,7 +160429,7 @@
  synchronized="true"
  static="true"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="handler" type="android.webkit.UrlInterceptHandler">
@@ -159693,7 +160442,7 @@
  synchronized="true"
  static="true"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="disabled" type="boolean">
@@ -159706,7 +160455,7 @@
  synchronized="true"
  static="true"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="handler" type="android.webkit.UrlInterceptHandler">
@@ -159719,11 +160468,32 @@
  synchronized="true"
  static="true"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
 </class>
+<interface name="ValueCallback"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onReceiveValue"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="T">
+</parameter>
+</method>
+</interface>
 <class name="WebBackForwardList"
  extends="java.lang.Object"
  abstract="false"
@@ -159799,6 +160569,58 @@
  visibility="public"
 >
 </constructor>
+<method name="addMessageToConsole"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="lineNumber" type="int">
+</parameter>
+<parameter name="sourceID" type="java.lang.String">
+</parameter>
+</method>
+<method name="getDefaultVideoPoster"
+ return="android.graphics.Bitmap"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVideoLoadingProgressView"
+ return="android.view.View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVisitedHistory"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.lang.String[]&gt;">
+</parameter>
+</method>
 <method name="onCloseWindow"
  return="void"
  abstract="false"
@@ -159830,6 +160652,66 @@
 </parameter>
 <parameter name="resultMsg" type="android.os.Message">
 </parameter>
+</method>
+<method name="onExceededDatabaseQuota"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="url" type="java.lang.String">
+</parameter>
+<parameter name="databaseIdentifier" type="java.lang.String">
+</parameter>
+<parameter name="currentQuota" type="long">
+</parameter>
+<parameter name="estimatedSize" type="long">
+</parameter>
+<parameter name="totalUsedQuota" type="long">
+</parameter>
+<parameter name="quotaUpdater" type="android.webkit.WebStorage.QuotaUpdater">
+</parameter>
+</method>
+<method name="onGeolocationPermissionsHidePrompt"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onGeolocationPermissionsShowPrompt"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="android.webkit.GeolocationPermissions.Callback">
+</parameter>
+</method>
+<method name="onHideCustomView"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 </method>
 <method name="onJsAlert"
  return="boolean"
@@ -159909,6 +160791,17 @@
 <parameter name="result" type="android.webkit.JsPromptResult">
 </parameter>
 </method>
+<method name="onJsTimeout"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="onProgressChanged"
  return="void"
  abstract="false"
@@ -159922,6 +160815,23 @@
 <parameter name="view" type="android.webkit.WebView">
 </parameter>
 <parameter name="newProgress" type="int">
+</parameter>
+</method>
+<method name="onReachedMaxAppCacheSize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="spaceNeeded" type="long">
+</parameter>
+<parameter name="totalUsedQuota" type="long">
+</parameter>
+<parameter name="quotaUpdater" type="android.webkit.WebStorage.QuotaUpdater">
 </parameter>
 </method>
 <method name="onReceivedIcon"
@@ -159954,6 +160864,23 @@
 <parameter name="title" type="java.lang.String">
 </parameter>
 </method>
+<method name="onReceivedTouchIconUrl"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.webkit.WebView">
+</parameter>
+<parameter name="url" type="java.lang.String">
+</parameter>
+<parameter name="precomposed" type="boolean">
+</parameter>
+</method>
 <method name="onRequestFocus"
  return="void"
  abstract="false"
@@ -159967,7 +160894,41 @@
 <parameter name="view" type="android.webkit.WebView">
 </parameter>
 </method>
+<method name="onShowCustomView"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="callback" type="android.webkit.WebChromeClient.CustomViewCallback">
+</parameter>
+</method>
 </class>
+<interface name="WebChromeClient.CustomViewCallback"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onCustomViewHidden"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
 <class name="WebHistoryItem"
  extends="java.lang.Object"
  abstract="false"
@@ -160216,6 +161177,28 @@
  visibility="public"
 >
 </method>
+<method name="getDatabaseEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDatabasePath"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getDefaultFixedFontSize"
  return="int"
  abstract="false"
@@ -160240,6 +161223,28 @@
 </method>
 <method name="getDefaultTextEncodingName"
  return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDefaultZoom"
+ return="android.webkit.WebSettings.ZoomDensity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDomStorageEnabled"
+ return="boolean"
  abstract="false"
  native="false"
  synchronized="true"
@@ -160305,6 +161310,17 @@
 >
 </method>
 <method name="getLightTouchEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLoadWithOverviewMode"
  return="boolean"
  abstract="false"
  native="false"
@@ -160454,7 +161470,7 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -160502,6 +161518,45 @@
  visibility="public"
 >
 <parameter name="allow" type="boolean">
+</parameter>
+</method>
+<method name="setAppCacheEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method name="setAppCacheMaxSize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="appCacheMaxSize" type="long">
+</parameter>
+</method>
+<method name="setAppCachePath"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="appCachePath" type="java.lang.String">
 </parameter>
 </method>
 <method name="setBlockNetworkImage"
@@ -160556,6 +161611,32 @@
 <parameter name="font" type="java.lang.String">
 </parameter>
 </method>
+<method name="setDatabaseEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method name="setDatabasePath"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="databasePath" type="java.lang.String">
+</parameter>
+</method>
 <method name="setDefaultFixedFontSize"
  return="void"
  abstract="false"
@@ -160595,6 +161676,32 @@
 <parameter name="encoding" type="java.lang.String">
 </parameter>
 </method>
+<method name="setDefaultZoom"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="zoom" type="android.webkit.WebSettings.ZoomDensity">
+</parameter>
+</method>
+<method name="setDomStorageEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
 <method name="setFantasyFontFamily"
  return="void"
  abstract="false"
@@ -160619,6 +161726,32 @@
  visibility="public"
 >
 <parameter name="font" type="java.lang.String">
+</parameter>
+</method>
+<method name="setGeolocationDatabasePath"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="databasePath" type="java.lang.String">
+</parameter>
+</method>
+<method name="setGeolocationEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="flag" type="boolean">
 </parameter>
 </method>
 <method name="setJavaScriptCanOpenWindowsAutomatically"
@@ -160671,6 +161804,19 @@
  visibility="public"
 >
 <parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method name="setLoadWithOverviewMode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="overview" type="boolean">
 </parameter>
 </method>
 <method name="setLoadsImagesAutomatically"
@@ -160888,7 +162034,7 @@
  synchronized="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="use" type="boolean">
@@ -161110,6 +162256,170 @@
 >
 </method>
 </class>
+<class name="WebSettings.ZoomDensity"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="android.webkit.WebSettings.ZoomDensity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="android.webkit.WebSettings.ZoomDensity[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="WebStorage"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="WebStorage"
+ type="android.webkit.WebStorage"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="deleteAllData"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="deleteOrigin"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+</method>
+<method name="getInstance"
+ return="android.webkit.WebStorage"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOrigins"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.util.Map&gt;">
+</parameter>
+</method>
+<method name="getQuotaForOrigin"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.lang.Long&gt;">
+</parameter>
+</method>
+<method name="getUsageForOrigin"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.lang.Long&gt;">
+</parameter>
+</method>
+<method name="setQuotaForOrigin"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="origin" type="java.lang.String">
+</parameter>
+<parameter name="quota" type="long">
+</parameter>
+</method>
+</class>
+<interface name="WebStorage.QuotaUpdater"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="updateQuota"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="newQuota" type="long">
+</parameter>
+</method>
+</interface>
 <class name="WebSyncManager"
  extends="java.lang.Object"
  abstract="true"
@@ -161529,6 +162839,17 @@
 <parameter name="vy" type="int">
 </parameter>
 </method>
+<method name="freeMemory"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getCertificate"
  return="android.net.http.SslCertificate"
  abstract="false"
@@ -161606,7 +162927,7 @@
  synchronized="true"
  static="true"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -161877,7 +163198,7 @@
  visibility="public"
 >
 </method>
-<method name="refreshPlugins"
+<method name="postUrl"
  return="void"
  abstract="false"
  native="false"
@@ -161885,6 +163206,21 @@
  static="false"
  final="false"
  deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="url" type="java.lang.String">
+</parameter>
+<parameter name="postData" type="byte[]">
+</parameter>
+</method>
+<method name="refreshPlugins"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="reloadOpenPages" type="boolean">
@@ -162646,6 +163982,171 @@
 <parameter name="url" type="java.lang.String">
 </parameter>
 </method>
+<field name="ERROR_AUTHENTICATION"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_BAD_URL"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-12"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_CONNECT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_FAILED_SSL_HANDSHAKE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-11"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_FILE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-13"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_FILE_NOT_FOUND"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-14"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_HOST_LOOKUP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_IO"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-7"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_PROXY_AUTHENTICATION"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-5"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_REDIRECT_LOOP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-9"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_TIMEOUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-8"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_TOO_MANY_REQUESTS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-15"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_UNKNOWN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_UNSUPPORTED_AUTH_SCHEME"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR_UNSUPPORTED_SCHEME"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-10"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="WebViewDatabase"
  extends="java.lang.Object"
@@ -165213,7 +166714,40 @@
  visibility="public"
 >
 </method>
+<method name="getDropDownBackground"
+ return="android.graphics.drawable.Drawable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getDropDownHeight"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDropDownHorizontalOffset"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDropDownVerticalOffset"
  return="int"
  abstract="false"
  native="false"
@@ -165447,6 +166981,32 @@
 <parameter name="id" type="int">
 </parameter>
 </method>
+<method name="setDropDownBackgroundDrawable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="d" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method name="setDropDownBackgroundResource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="id" type="int">
+</parameter>
+</method>
 <method name="setDropDownHeight"
  return="void"
  abstract="false"
@@ -165458,6 +167018,32 @@
  visibility="public"
 >
 <parameter name="height" type="int">
+</parameter>
+</method>
+<method name="setDropDownHorizontalOffset"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method name="setDropDownVerticalOffset"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="offset" type="int">
 </parameter>
 </method>
 <method name="setDropDownWidth"
@@ -175160,6 +176746,30 @@
 <parameter name="isExpanded" type="boolean">
 </parameter>
 </method>
+<method name="getViewBinder"
+ return="android.widget.SimpleCursorTreeAdapter.ViewBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setViewBinder"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="viewBinder" type="android.widget.SimpleCursorTreeAdapter.ViewBinder">
+</parameter>
+</method>
 <method name="setViewImage"
  return="void"
  abstract="false"
@@ -175175,7 +176785,47 @@
 <parameter name="value" type="java.lang.String">
 </parameter>
 </method>
+<method name="setViewText"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
 </class>
+<interface name="SimpleCursorTreeAdapter.ViewBinder"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="setViewValue"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="cursor" type="android.database.Cursor">
+</parameter>
+<parameter name="columnIndex" type="int">
+</parameter>
+</method>
+</interface>
 <class name="SimpleExpandableListAdapter"
  extends="android.widget.BaseExpandableListAdapter"
  abstract="false"
@@ -178789,16 +180439,6 @@
 <parameter name="pixels" type="int">
 </parameter>
 </method>
-<field name="mInputMethodState"
- type="android.widget.TextView.InputMethodState"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 </class>
 <class name="TextView.BufferType"
  extends="java.lang.Enum"
@@ -178832,144 +180472,6 @@
  visibility="public"
 >
 </method>
-</class>
-<class name="TextView.InputMethodState"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="TextView.InputMethodState"
- type="android.widget.TextView.InputMethodState"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<field name="mBatchEditNesting"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mChangedDelta"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mChangedEnd"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mChangedStart"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mContentChanged"
- type="boolean"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mCursorChanged"
- type="boolean"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mCursorRectInWindow"
- type="android.graphics.Rect"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mExtracting"
- type="android.view.inputmethod.ExtractedTextRequest"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mSelectionModeChanged"
- type="boolean"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mTmpExtracted"
- type="android.view.inputmethod.ExtractedText"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mTmpOffset"
- type="float[]"
- transient="false"
- volatile="false"
- value="null"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mTmpRectF"
- type="android.graphics.RectF"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 </class>
 <interface name="TextView.OnEditorActionListener"
  abstract="true"
