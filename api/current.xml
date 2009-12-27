@@ -136685,17 +136685,6 @@
  visibility="public"
 >
 </field>
-<field name="VIRTUAL_KEY"
- type="int"
- transient="false"
- volatile="false"
- value="1"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 </class>
 <class name="InflateException"
  extends="java.lang.RuntimeException"
@@ -140303,19 +140292,6 @@
  visibility="public"
 >
 </method>
-<method name="findPointerIndex"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerId" type="int">
-</parameter>
-</method>
 <method name="getAction"
  return="int"
  abstract="false"
@@ -140397,50 +140373,7 @@
 <parameter name="pos" type="int">
 </parameter>
 </method>
-<method name="getHistoricalPressure"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
-<parameter name="pos" type="int">
-</parameter>
-</method>
 <method name="getHistoricalSize"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pos" type="int">
-</parameter>
-</method>
-<method name="getHistoricalSize"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
-<parameter name="pos" type="int">
-</parameter>
-</method>
-<method name="getHistoricalX"
  return="float"
  abstract="false"
  native="false"
@@ -140463,8 +140396,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="pointerIndex" type="int">
-</parameter>
 <parameter name="pos" type="int">
 </parameter>
 </method>
@@ -140478,21 +140409,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="pos" type="int">
-</parameter>
-</method>
-<method name="getHistoricalY"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
 <parameter name="pos" type="int">
 </parameter>
 </method>
@@ -140518,30 +140434,6 @@
  visibility="public"
 >
 </method>
-<method name="getPointerCount"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getPointerId"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
-</method>
 <method name="getPressure"
  return="float"
  abstract="false"
@@ -140552,19 +140444,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-</method>
-<method name="getPressure"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
 </method>
 <method name="getRawX"
  return="float"
@@ -140599,19 +140478,6 @@
  visibility="public"
 >
 </method>
-<method name="getSize"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
-</method>
 <method name="getX"
  return="float"
  abstract="false"
@@ -140622,19 +140488,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-</method>
-<method name="getX"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
 </method>
 <method name="getXPrecision"
  return="float"
@@ -140657,19 +140510,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-</method>
-<method name="getY"
- return="float"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="pointerIndex" type="int">
-</parameter>
 </method>
 <method name="getYPrecision"
  return="float"
@@ -140733,43 +140573,6 @@
 </parameter>
 <parameter name="action" type="int">
 </parameter>
-<parameter name="pointers" type="int">
-</parameter>
-<parameter name="x" type="float">
-</parameter>
-<parameter name="y" type="float">
-</parameter>
-<parameter name="pressure" type="float">
-</parameter>
-<parameter name="size" type="float">
-</parameter>
-<parameter name="metaState" type="int">
-</parameter>
-<parameter name="xPrecision" type="float">
-</parameter>
-<parameter name="yPrecision" type="float">
-</parameter>
-<parameter name="deviceId" type="int">
-</parameter>
-<parameter name="edgeFlags" type="int">
-</parameter>
-</method>
-<method name="obtain"
- return="android.view.MotionEvent"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="downTime" type="long">
-</parameter>
-<parameter name="eventTime" type="long">
-</parameter>
-<parameter name="action" type="int">
-</parameter>
 <parameter name="x" type="float">
 </parameter>
 <parameter name="y" type="float">
@@ -140778,19 +140581,6 @@
 </parameter>
 </method>
 <method name="obtain"
- return="android.view.MotionEvent"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="o" type="android.view.MotionEvent">
-</parameter>
-</method>
-<method name="obtainNoHistory"
  return="android.view.MotionEvent"
  abstract="false"
  native="false"
@@ -140907,17 +140697,6 @@
  visibility="public"
 >
 </field>
-<field name="ACTION_MASK"
- type="int"
- transient="false"
- volatile="false"
- value="255"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="ACTION_MOVE"
  type="int"
  transient="false"
@@ -140934,116 +140713,6 @@
  transient="false"
  volatile="false"
  value="4"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_1_DOWN"
- type="int"
- transient="false"
- volatile="false"
- value="5"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_1_UP"
- type="int"
- transient="false"
- volatile="false"
- value="6"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_2_DOWN"
- type="int"
- transient="false"
- volatile="false"
- value="261"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_2_UP"
- type="int"
- transient="false"
- volatile="false"
- value="262"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_3_DOWN"
- type="int"
- transient="false"
- volatile="false"
- value="517"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_3_UP"
- type="int"
- transient="false"
- volatile="false"
- value="518"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_DOWN"
- type="int"
- transient="false"
- volatile="false"
- value="5"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_ID_MASK"
- type="int"
- transient="false"
- volatile="false"
- value="65280"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_ID_SHIFT"
- type="int"
- transient="false"
- volatile="false"
- value="8"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_POINTER_UP"
- type="int"
- transient="false"
- volatile="false"
- value="6"
  static="true"
  final="true"
  deprecated="not deprecated"
