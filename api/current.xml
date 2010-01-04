@@ -71974,6 +71974,17 @@
  visibility="public"
 >
 </method>
+<method name="getContrast"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getExposureCompensation"
  return="int"
  abstract="false"
@@ -72108,7 +72119,40 @@
  visibility="public"
 >
 </method>
+<method name="getMaxContrast"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getMaxExposureCompensation"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMaxSaturation"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMaxSharpness"
  return="int"
  abstract="false"
  native="false"
@@ -72196,8 +72240,30 @@
  visibility="public"
 >
 </method>
+<method name="getSaturation"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getSceneMode"
  return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSharpness"
+ return="int"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72531,6 +72597,19 @@
 <parameter name="value" type="java.lang.String">
 </parameter>
 </method>
+<method name="setContrast"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="contrast" type="int">
+</parameter>
+</method>
 <method name="setExifDateTime"
  return="void"
  abstract="false"
@@ -72849,6 +72928,19 @@
 <parameter name="rotation" type="int">
 </parameter>
 </method>
+<method name="setSaturation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="saturation" type="int">
+</parameter>
+</method>
 <method name="setSceneMode"
  return="void"
  abstract="false"
@@ -72860,6 +72952,19 @@
  visibility="public"
 >
 <parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="setSharpness"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sharpness" type="int">
 </parameter>
 </method>
 <method name="setWhiteBalance"
