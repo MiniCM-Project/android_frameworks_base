@@ -85805,7 +85805,27 @@
  visibility="public"
 >
 </field>
+<field name="frequency"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="hiddenSSID"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="isAdhoc"
  type="boolean"
  transient="false"
  volatile="false"
@@ -85934,6 +85954,169 @@
  transient="false"
  volatile="false"
  value="&quot;auth_alg&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="WifiConfiguration.ChannelFrequency"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="CHANNEL_1"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2412"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_10"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2457"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_11"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2462"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_12"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2467"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_13"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2472"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_14"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2484"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_2"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2417"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_3"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2422"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_4"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2427"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_5"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2432"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_6"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2437"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_7"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2442"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_8"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2447"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANNEL_9"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2452"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -86674,6 +86857,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="setAdhocMode"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adhoc" type="boolean">
+</parameter>
 </method>
 <method name="setWifiEnabled"
  return="boolean"
