@@ -976,7 +976,7 @@
  value="&quot;android.permission.SET_PREFERRED_APPLICATIONS&quot;"
  static="true"
  final="true"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </field>
@@ -1945,6 +1945,17 @@
  visibility="public"
 >
 </field>
+<field name="author"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843444"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="authorities"
  type="int"
  transient="false"
@@ -1972,6 +1983,17 @@
  transient="false"
  volatile="false"
  value="16842928"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="autoStart"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="16843445"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -9029,17 +9051,6 @@
  visibility="public"
 >
 </field>
-<field name="wallpaperAuthor"
- type="int"
- transient="false"
- volatile="false"
- value="16843444"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="wallpaperCloseEnterAnimation"
  type="int"
  transient="false"
@@ -9056,17 +9067,6 @@
  transient="false"
  volatile="false"
  value="16843414"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="wallpaperDescription"
- type="int"
- transient="false"
- volatile="false"
- value="16843445"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -15377,71 +15377,6 @@
 >
 </method>
 </interface>
-<class name="AccountManagerResponse"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<implements name="android.os.Parcelable">
-</implements>
-<method name="describeContents"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="onError"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="errorCode" type="int">
-</parameter>
-<parameter name="errorMessage" type="java.lang.String">
-</parameter>
-</method>
-<method name="onResult"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="result" type="android.os.Bundle">
-</parameter>
-</method>
-<method name="writeToParcel"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="dest" type="android.os.Parcel">
-</parameter>
-<parameter name="flags" type="int">
-</parameter>
-</method>
-</class>
 <class name="AccountsException"
  extends="java.lang.Exception"
  abstract="false"
@@ -25474,6 +25409,28 @@
  visibility="public"
 >
 </field>
+<field name="COMMAND_DROP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.home.drop&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="COMMAND_TAP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.wallpaper.tap&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 </package>
 <package name="android.appwidget"
@@ -34383,6 +34340,17 @@
 <parameter name="defaultValue" type="short">
 </parameter>
 </method>
+<method name="getSourceBounds"
+ return="android.graphics.Rect"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getStringArrayExtra"
  return="java.lang.String[]"
  abstract="false"
@@ -35194,6 +35162,19 @@
 <parameter name="packageName" type="java.lang.String">
 </parameter>
 </method>
+<method name="setSourceBounds"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="r" type="android.graphics.Rect">
+</parameter>
+</method>
 <method name="setType"
  return="android.content.Intent"
  abstract="false"
@@ -35592,6 +35573,17 @@
  transient="false"
  volatile="false"
  value="&quot;android.intent.action.INSERT_OR_EDIT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_LOCALE_CHANGED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.action.LOCALE_CHANGED&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -36440,6 +36432,17 @@
  value="&quot;android.intent.extra.changed_component_name&quot;"
  static="true"
  final="true"
+ deprecated="deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_CHANGED_COMPONENT_NAME_LIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.extra.changed_component_name_list&quot;"
+ static="true"
+ final="true"
  deprecated="not deprecated"
  visibility="public"
 >
@@ -36746,6 +36749,17 @@
  transient="false"
  volatile="false"
  value="16"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FILL_IN_SOURCE_BOUNDS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="32"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -41686,7 +41700,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="packageName" type="java.lang.String">
@@ -42450,7 +42464,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <parameter name="packageName" type="java.lang.String">
@@ -42586,6 +42600,116 @@
  transient="false"
  volatile="false"
  value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_CAMERA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.camera&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_CAMERA_AUTOFOCUS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.camera.autofocus&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_CAMERA_FLASH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.camera.flash&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_LIVE_WALLPAPER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.software.live_wallpaper&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_SENSOR_LIGHT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.sensor.light&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_SENSOR_PROXIMITY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.sensor.proximity&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TELEPHONY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.telephony&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TELEPHONY_CDMA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.telephony.cdma&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TELEPHONY_GSM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.telephony.gsm&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TOUCHSCREEN_MULTITOUCH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.touchscreen.multitouch&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -62634,6 +62758,17 @@
  visibility="public"
 >
 </method>
+<method name="flattenToString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="height"
  return="int"
  abstract="false"
@@ -62859,6 +62994,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="unflattenFromString"
+ return="android.graphics.Rect"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="str" type="java.lang.String">
+</parameter>
 </method>
 <method name="union"
  return="void"
@@ -100477,11 +100625,22 @@
  visibility="public"
 >
 </field>
-<field name="ECLAIR_MR1"
+<field name="ECLAIR_0_1"
  type="int"
  transient="false"
  volatile="false"
  value="6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ECLAIR_MR1"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="7"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -124433,34 +124592,6 @@
 </parameter>
 </method>
 </class>
-<class name="WallpaperSettingsActivity"
- extends="android.preference.PreferenceActivity"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="WallpaperSettingsActivity"
- type="android.service.wallpaper.WallpaperSettingsActivity"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<field name="EXTRA_PREVIEW_MODE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;android.service.wallpaper.PREVIEW_MODE&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
 </package>
 <package name="android.speech"
 >
@@ -125327,6 +125458,20 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="rssi" type="int">
+</parameter>
+<parameter name="location" type="java.lang.String">
+</parameter>
+<parameter name="radioType" type="int">
+</parameter>
+</constructor>
+<constructor name="NeighboringCellInfo"
+ type="android.telephony.NeighboringCellInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 <parameter name="in" type="android.os.Parcel">
 </parameter>
 </constructor>
@@ -126138,6 +126283,21 @@
 <parameter name="state" type="int">
 </parameter>
 </method>
+<method name="onDataConnectionStateChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="state" type="int">
+</parameter>
+<parameter name="networkType" type="int">
+</parameter>
+</method>
 <method name="onMessageWaitingIndicatorChanged"
  return="void"
  abstract="false"
@@ -126175,6 +126335,19 @@
  visibility="public"
 >
 <parameter name="asu" type="int">
+</parameter>
+</method>
+<method name="onSignalStrengthsChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="signalStrength" type="android.telephony.SignalStrength">
 </parameter>
 </method>
 <field name="LISTEN_CALL_FORWARDING_INDICATOR"
@@ -126270,6 +126443,17 @@
  transient="false"
  volatile="false"
  value="2"
+ static="true"
+ final="true"
+ deprecated="deprecated"
+ visibility="public"
+>
+</field>
+<field name="LISTEN_SIGNAL_STRENGTHS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="256"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -126552,6 +126736,131 @@
  visibility="public"
 >
 </field>
+</class>
+<class name="SignalStrength"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.os.Parcelable">
+</implements>
+<method name="describeContents"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCdmaDbm"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCdmaEcio"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEvdoDbm"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEvdoEcio"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEvdoSnr"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getGsmBitErrorRate"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getGsmSignalStrength"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isGsm"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="writeToParcel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
 </class>
 <class name="SmsManager"
  extends="java.lang.Object"
@@ -174651,7 +174960,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="callback" type="android.webkit.ValueCallback&lt;java.util.Set&gt;">
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.util.Set&lt;java.lang.String&gt;&gt;">
 </parameter>
 </method>
 </class>
@@ -175747,23 +176056,6 @@
  visibility="public"
 >
 </constructor>
-<method name="addMessageToConsole"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="message" type="java.lang.String">
-</parameter>
-<parameter name="lineNumber" type="int">
-</parameter>
-<parameter name="sourceID" type="java.lang.String">
-</parameter>
-</method>
 <method name="getDefaultVideoPoster"
  return="android.graphics.Bitmap"
  abstract="false"
@@ -175810,6 +176102,23 @@
  visibility="public"
 >
 <parameter name="window" type="android.webkit.WebView">
+</parameter>
+</method>
+<method name="onConsoleMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="lineNumber" type="int">
+</parameter>
+<parameter name="sourceID" type="java.lang.String">
 </parameter>
 </method>
 <method name="onCreateWindow"
@@ -190268,6 +190577,21 @@
 <parameter name="parcel" type="android.os.Parcel">
 </parameter>
 </constructor>
+<method name="addView"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="viewId" type="int">
+</parameter>
+<parameter name="nestedView" type="android.widget.RemoteViews">
+</parameter>
+</method>
 <method name="apply"
  return="android.view.View"
  abstract="false"
@@ -190342,6 +190666,19 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 <parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method name="removeAllViews"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="viewId" type="int">
 </parameter>
 </method>
 <method name="setBitmap"
@@ -196929,6 +197266,17 @@
 <parameter name="attrs" type="android.util.AttributeSet">
 </parameter>
 </constructor>
+<method name="isAutoStart"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="isFlipping"
  return="boolean"
  abstract="false"
@@ -196939,6 +197287,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="setAutoStart"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="autoStart" type="boolean">
+</parameter>
 </method>
 <method name="setFlipInterval"
  return="void"
