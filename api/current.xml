@@ -35528,6 +35528,19 @@
 <parameter name="appInfo" type="android.content.pm.ApplicationInfo">
 </parameter>
 </method>
+<method name="hasSystemFeature"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
 <method name="isSafeMode"
  return="boolean"
  abstract="true"
@@ -35795,6 +35808,116 @@
  transient="false"
  volatile="false"
  value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_CAMERA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.camera&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_CAMERA_AUTOFOCUS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.camera.autofocus&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_CAMERA_FLASH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.camera.flash&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_LIVE_WALLPAPER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.software.live_wallpaper&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_SENSOR_LIGHT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.sensor.light&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_SENSOR_PROXIMITY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.sensor.proximity&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TELEPHONY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.telephony&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TELEPHONY_CDMA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.telephony.cdma&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TELEPHONY_GSM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.telephony.gsm&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FEATURE_TOUCHSCREEN_MULTITOUCH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.hardware.touchscreen.multitouch&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -40722,21 +40845,8 @@
 <parameter name="buffer" type="android.database.CharArrayBuffer">
 </parameter>
 </method>
-<method name="hasSystemFeature"
- return="boolean"
- abstract="true"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="name" type="java.lang.String">
-</parameter>
-</method>
-<method name="isSafeMode"
- return="boolean"
+<method name="deactivate"
+ return="void"
  abstract="true"
  native="false"
  synchronized="false"
@@ -159671,7 +159781,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="callback" type="android.webkit.ValueCallback&lt;java.util.Set&gt;">
+<parameter name="callback" type="android.webkit.ValueCallback&lt;java.util.Set&lt;java.lang.String&gt;&gt;">
 </parameter>
 </method>
 </class>
