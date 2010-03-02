@@ -3463,17 +3463,6 @@
  visibility="public"
 >
 </field>
-<field name="expandedMenuTheme"
- type="int"
- transient="false"
- volatile="false"
- value="16843457"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="exported"
  type="int"
  transient="false"
@@ -4172,17 +4161,6 @@
  transient="false"
  volatile="false"
  value="16842754"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="iconMenuTheme"
- type="int"
- transient="false"
- volatile="false"
- value="16843458"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -12273,17 +12251,6 @@
  transient="false"
  volatile="false"
  value="17039378"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="buy_ringtones"
- type="int"
- transient="false"
- volatile="false"
- value="17040171"
  static="true"
  final="true"
  deprecated="not deprecated"
