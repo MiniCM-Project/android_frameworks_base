@@ -25617,30 +25617,8 @@
 <parameter name="name" type="java.lang.String">
 </parameter>
 </method>
-<method name="isInitialStickyBroadcast"
+<method name="deleteFile"
  return="boolean"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="isOrderedBroadcast"
- return="boolean"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="onReceive"
- return="void"
  abstract="true"
  native="false"
  synchronized="false"
@@ -29932,6 +29910,17 @@
  visibility="public"
 >
 </field>
+<field name="ACTION_LOCALE_CHANGED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.action.LOCALE_CHANGED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_MAIN"
  type="java.lang.String"
  transient="false"
@@ -34063,19 +34052,8 @@
  visibility="public"
 >
 </field>
-<field name="ACTION_LOCALE_CHANGED"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;android.intent.action.LOCALE_CHANGED&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ACTION_MAIN"
- type="java.lang.String"
+<field name="enabled"
+ type="boolean"
  transient="false"
  volatile="false"
  static="false"
