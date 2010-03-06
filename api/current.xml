@@ -177102,6 +177102,19 @@
 <parameter name="ua" type="java.lang.String">
 </parameter>
 </method>
+<method name="showZoomControls"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
 <method name="supportMultipleWindows"
  return="boolean"
  abstract="false"
