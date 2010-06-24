@@ -72029,6 +72029,17 @@
  visibility="public"
 >
 </method>
+<method name="getISOValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getInt"
  return="int"
  abstract="false"
@@ -72066,6 +72077,17 @@
 </method>
 <method name="getJpegThumbnailSize"
  return="android.hardware.Camera.Size"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLensShade"
+ return="java.lang.String"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72218,8 +72240,30 @@
  visibility="public"
 >
 </method>
+<method name="getSupportedIsoValues"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getSupportedJpegThumbnailSizes"
  return="java.util.List&lt;android.hardware.Camera.Size&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSupportedLensShadeModes"
+ return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72556,6 +72600,19 @@
 <parameter name="timestamp" type="long">
 </parameter>
 </method>
+<method name="setISOValue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="iso" type="java.lang.String">
+</parameter>
+</method>
 <method name="setJpegQuality"
  return="void"
  abstract="false"
@@ -72595,6 +72652,19 @@
 <parameter name="width" type="int">
 </parameter>
 <parameter name="height" type="int">
+</parameter>
+</method>
+<method name="setLensShade"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="lensshade" type="java.lang.String">
 </parameter>
 </method>
 <method name="setPictureFormat"
@@ -72978,6 +73048,94 @@
  transient="false"
  volatile="false"
  value="&quot;macro&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_100"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO100&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_200"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO200&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_400"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO400&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_800"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO800&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_AUTO"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;auto&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_HJR"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ISO_HJR&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LENSSHADE_DISABLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;disable&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LENSSHADE_ENABLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;enable&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
