@@ -148883,6 +148883,17 @@
 <parameter name="flags" type="int">
 </parameter>
 </method>
+<method name="getInstalledThemePackages"
+ return="java.util.List&lt;android.content.pm.PackageInfo&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getInstallerPackageName"
  return="java.lang.String"
  abstract="false"
@@ -203357,6 +203368,20 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 <parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor name="LinearLayout"
+ type="android.widget.LinearLayout"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
 </parameter>
 </constructor>
 <method name="getBaselineAlignedChildIndex"
