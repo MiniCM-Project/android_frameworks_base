@@ -59475,7 +59475,7 @@
 <method name="drawText"
  return="void"
  abstract="false"
- native="true"
+ native="false"
  synchronized="false"
  static="false"
  final="false"
@@ -71592,6 +71592,19 @@
  visibility="public"
 >
 </method>
+<method name="open"
+ return="android.hardware.Camera"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cameraNode" type="java.lang.String">
+</parameter>
+</method>
 <method name="reconnect"
  return="void"
  abstract="false"
@@ -73757,6 +73770,80 @@
  volatile="false"
  static="false"
  final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="CameraSwitch"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="CameraSwitch"
+ type="android.hardware.CameraSwitch"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="hasCameraSwitch"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="openCamera"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cameraNode" type="java.lang.String">
+</parameter>
+</method>
+<method name="openMainCamera"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="SWITCH_CAMERA_MAIN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;main&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SWITCH_CAMERA_SECONDARY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;secondary&quot;"
+ static="true"
+ final="true"
  deprecated="not deprecated"
  visibility="public"
 >
@@ -214472,7 +214559,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="arg0" type="T">
+<parameter name="t" type="T">
 </parameter>
 </method>
 </interface>
