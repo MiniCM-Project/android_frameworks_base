@@ -73170,7 +73170,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;center&quot;"
+ value="&quot;meter-center&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73181,7 +73181,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;average&quot;"
+ value="&quot;meter-average&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73192,7 +73192,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;spot&quot;"
+ value="&quot;meter-spot&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -83191,6 +83191,17 @@
 <parameter name="quality" type="int">
 </parameter>
 </method>
+<field name="QUALITY_FRONT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="QUALITY_HIGH"
  type="int"
  transient="false"
@@ -83391,6 +83402,226 @@
  volatile="false"
  value="1"
  static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="EncoderCapabilities"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAudioEncoders"
+ return="java.util.List&lt;android.media.EncoderCapabilities.AudioEncoderCap&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOutputFileFormats"
+ return="int[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVideoEncoders"
+ return="java.util.List&lt;android.media.EncoderCapabilities.VideoEncoderCap&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="EncoderCapabilities.AudioEncoderCap"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="mCodec"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxBitRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxChannels"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxSampleRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinBitRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinChannels"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinSampleRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="EncoderCapabilities.VideoEncoderCap"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="mCodec"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxBitRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxFrameHeight"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxFrameRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMaxFrameWidth"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinBitRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinFrameHeight"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinFrameRate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="mMinFrameWidth"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
  final="true"
  deprecated="not deprecated"
  visibility="public"
