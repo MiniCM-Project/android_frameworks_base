@@ -71976,6 +71976,17 @@
  visibility="public"
 >
 </method>
+<method name="getBrightness"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getColorEffect"
  return="java.lang.String"
  abstract="false"
@@ -71988,7 +71999,51 @@
 >
 </method>
 <method name="getContrast"
- return="int"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDefaultBrightness"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDefaultContrast"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDefaultSaturation"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDefaultSharpness"
+ return="float"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72132,8 +72187,19 @@
  visibility="public"
 >
 </method>
+<method name="getMaxBrightness"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getMaxContrast"
- return="int"
+ return="float"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72155,7 +72221,7 @@
 >
 </method>
 <method name="getMaxSaturation"
- return="int"
+ return="float"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72166,7 +72232,7 @@
 >
 </method>
 <method name="getMaxSharpness"
- return="int"
+ return="float"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72254,7 +72320,7 @@
 >
 </method>
 <method name="getSaturation"
- return="int"
+ return="float"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72276,7 +72342,7 @@
 >
 </method>
 <method name="getSharpness"
- return="int"
+ return="float"
  abstract="false"
  native="false"
  synchronized="false"
@@ -72495,6 +72561,17 @@
  visibility="public"
 >
 </method>
+<method name="isSmartContrastEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="isSmoothZoomSupported"
  return="boolean"
  abstract="false"
@@ -72597,6 +72674,19 @@
 <parameter name="value" type="java.lang.String">
 </parameter>
 </method>
+<method name="setBrightness"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="brightness" type="float">
+</parameter>
+</method>
 <method name="setColorEffect"
  return="void"
  abstract="false"
@@ -72620,7 +72710,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="contrast" type="int">
+<parameter name="contrast" type="float">
 </parameter>
 </method>
 <method name="setExifDateTime"
@@ -72951,7 +73041,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="saturation" type="int">
+<parameter name="saturation" type="float">
 </parameter>
 </method>
 <method name="setSceneMode"
@@ -72977,7 +73067,20 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="sharpness" type="int">
+<parameter name="sharpness" type="float">
+</parameter>
+</method>
+<method name="setSmartContrastEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
 </parameter>
 </method>
 <method name="setWhiteBalance"
@@ -73067,7 +73170,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;center-weighted&quot;"
+ value="&quot;center&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73078,7 +73181,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;frame-average&quot;"
+ value="&quot;average&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73089,7 +73192,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;spot-metering&quot;"
+ value="&quot;spot&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73320,7 +73423,18 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;ISO100&quot;"
+ value="&quot;100&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ISO_1250"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;1250&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73331,7 +73445,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;ISO200&quot;"
+ value="&quot;200&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73342,7 +73456,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;ISO400&quot;"
+ value="&quot;400&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73353,7 +73467,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;ISO800&quot;"
+ value="&quot;800&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -73375,7 +73489,7 @@
  type="java.lang.String"
  transient="false"
  volatile="false"
- value="&quot;ISO_HJR&quot;"
+ value="&quot;deblur&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
