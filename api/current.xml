@@ -85708,6 +85708,17 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<field name="AAC"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="AMR_NB"
  type="int"
  transient="false"
