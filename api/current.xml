@@ -170256,6 +170256,94 @@
  visibility="public"
 >
 </field>
+<field name="KEYCODE_FUNC_1"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="92"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_2"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="93"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_3"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="94"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_4"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="95"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_5"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="96"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_6"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="97"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_7"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="98"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_FUNC_8"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="99"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="KEYCODE_G"
  type="int"
  transient="false"
@@ -170580,6 +170668,17 @@
  transient="false"
  volatile="false"
  value="45"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_QUECHAR"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="100"
  static="true"
  final="true"
  deprecated="not deprecated"
