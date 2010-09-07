@@ -85299,6 +85299,19 @@
  visibility="public"
 >
 </constructor>
+<method name="autoFocusCamera"
+ return="void"
+ abstract="false"
+ native="true"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
 <method name="getAudioSourceMax"
  return="int"
  abstract="false"
@@ -238975,7 +238988,7 @@
 <method name="availableProcessors"
  return="int"
  abstract="false"
- native="true"
+ native="false"
  synchronized="false"
  static="false"
  final="false"
