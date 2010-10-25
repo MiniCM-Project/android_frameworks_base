@@ -74892,7 +74892,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.0010f"
+ value="0.001f"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -85809,6 +85809,28 @@
  transient="false"
  volatile="false"
  value="0"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FM_RX"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="7"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="FM_RX_A2DP"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="8"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -171098,6 +171120,61 @@
  visibility="public"
 >
 </field>
+<field name="KEYCODE_USER1"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="101"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_USER2"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="102"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_USER3"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="103"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_USER4"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="104"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEYCODE_USER5"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="105"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="KEYCODE_V"
  type="int"
  transient="false"
@@ -215240,7 +215317,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="t" type="T">
+<parameter name="arg0" type="T">
 </parameter>
 </method>
 </interface>
