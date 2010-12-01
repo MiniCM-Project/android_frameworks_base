@@ -74949,7 +74949,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.001f"
+ value="0.0010f"
  static="true"
  final="true"
  deprecated="not deprecated"
