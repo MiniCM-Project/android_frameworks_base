@@ -71998,6 +71998,17 @@
  visibility="public"
 >
 </method>
+<method name="getContinuousAf"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getContrast"
  return="int"
  abstract="false"
@@ -72385,6 +72396,17 @@
  visibility="public"
 >
 </method>
+<method name="getSupportedContinuousAfModes"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getSupportedFlashModes"
  return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
@@ -72688,6 +72710,19 @@
 </parameter>
 </method>
 <method name="setColorEffect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="setContinuousAf"
  return="void"
  abstract="false"
  native="false"
@@ -73128,6 +73163,28 @@
  transient="false"
  volatile="false"
  value="&quot;meter-spot&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CAF_OFF"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;caf-off&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CAF_ON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;caf-on&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -74892,7 +74949,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.001f"
+ value="0.0010f"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -169222,6 +169279,28 @@
  visibility="public"
 >
 </field>
+<field name="DOT_COM_INPUT"
+ type="char"
+ transient="false"
+ volatile="false"
+ value="61187"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DOT_WWW_INPUT"
+ type="char"
+ transient="false"
+ volatile="false"
+ value="61188"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="HEX_INPUT"
  type="char"
  transient="false"
@@ -170504,94 +170583,6 @@
  visibility="public"
 >
 </field>
-<field name="KEYCODE_FUNC_1"
- type="int"
- transient="false"
- volatile="false"
- value="92"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_2"
- type="int"
- transient="false"
- volatile="false"
- value="93"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_3"
- type="int"
- transient="false"
- volatile="false"
- value="94"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_4"
- type="int"
- transient="false"
- volatile="false"
- value="95"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_5"
- type="int"
- transient="false"
- volatile="false"
- value="96"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_6"
- type="int"
- transient="false"
- volatile="false"
- value="97"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_7"
- type="int"
- transient="false"
- volatile="false"
- value="98"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="KEYCODE_FUNC_8"
- type="int"
- transient="false"
- volatile="false"
- value="99"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="KEYCODE_G"
  type="int"
  transient="false"
@@ -170922,17 +170913,6 @@
  visibility="public"
 >
 </field>
-<field name="KEYCODE_QUECHAR"
- type="int"
- transient="false"
- volatile="false"
- value="100"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="KEYCODE_R"
  type="int"
  transient="false"
@@ -171124,7 +171104,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="101"
+ value="92"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -171135,7 +171115,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="102"
+ value="93"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -171146,7 +171126,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="103"
+ value="94"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -171157,7 +171137,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="104"
+ value="95"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -171168,7 +171148,7 @@
  type="int"
  transient="false"
  volatile="false"
- value="105"
+ value="96"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -195789,6 +195769,25 @@
 <parameter name="newFocus" type="android.view.View">
 </parameter>
 </method>
+<method name="onOverscrolled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="scrollX" type="int">
+</parameter>
+<parameter name="scrollY" type="int">
+</parameter>
+<parameter name="clampedX" type="boolean">
+</parameter>
+<parameter name="clampedY" type="boolean">
+</parameter>
+</method>
 <method name="overlayHorizontalScrollbar"
  return="boolean"
  abstract="false"
@@ -197244,6 +197243,25 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="onOverscrolled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="scrollX" type="int">
+</parameter>
+<parameter name="scrollY" type="int">
+</parameter>
+<parameter name="clampedX" type="boolean">
+</parameter>
+<parameter name="clampedY" type="boolean">
+</parameter>
 </method>
 <method name="onRestoreInstanceState"
  return="void"
@@ -204087,6 +204105,25 @@
  visibility="public"
 >
 </method>
+<method name="onOverscrolled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="scrollX" type="int">
+</parameter>
+<parameter name="scrollY" type="int">
+</parameter>
+<parameter name="clampedX" type="boolean">
+</parameter>
+<parameter name="clampedY" type="boolean">
+</parameter>
+</method>
 <method name="pageScroll"
  return="boolean"
  abstract="false"
@@ -208778,6 +208815,25 @@
  deprecated="not deprecated"
  visibility="public"
 >
+</method>
+<method name="onOverscrolled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="scrollX" type="int">
+</parameter>
+<parameter name="scrollY" type="int">
+</parameter>
+<parameter name="clampedX" type="boolean">
+</parameter>
+<parameter name="clampedY" type="boolean">
+</parameter>
 </method>
 <method name="pageScroll"
  return="boolean"
