@@ -74251,8 +74251,41 @@
  visibility="public"
 >
 </method>
+<method name="getSupportedTouchAfAec"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getSupportedWhiteBalance"
  return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTouchAfAec"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTouchIndexAec"
+ return="android.hardware.Camera.Size"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74802,6 +74835,34 @@
  visibility="public"
 >
 <parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method name="setTouchAfAec"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="setTouchIndexAec"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
 </parameter>
 </method>
 <method name="setWhiteBalance"
@@ -75486,6 +75547,28 @@
  transient="false"
  volatile="false"
  value="&quot;theatre&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TOUCH_AF_AEC_OFF"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;touch-off&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TOUCH_AF_AEC_ON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;touch-on&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
