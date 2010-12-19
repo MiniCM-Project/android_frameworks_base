@@ -73538,6 +73538,47 @@
 >
 </field>
 </class>
+<class name="Camera.Coordinate"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Camera.Coordinate"
+ type="android.hardware.Camera.Coordinate"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</constructor>
+<field name="xCoordinate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="yCoordinate"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
 <interface name="Camera.ErrorCallback"
  abstract="true"
  static="true"
@@ -74285,7 +74326,18 @@
 >
 </method>
 <method name="getTouchIndexAec"
- return="android.hardware.Camera.Size"
+ return="android.hardware.Camera.Coordinate"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTouchIndexAf"
+ return="android.hardware.Camera.Coordinate"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74851,6 +74903,21 @@
 </parameter>
 </method>
 <method name="setTouchIndexAec"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+<method name="setTouchIndexAf"
  return="void"
  abstract="false"
  native="false"
