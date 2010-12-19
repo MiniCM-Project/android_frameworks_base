@@ -74009,6 +74009,17 @@
  visibility="public"
 >
 </method>
+<method name="getPreviewFrameRateMode"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getPreviewSize"
  return="android.hardware.Camera.Size"
  abstract="false"
@@ -74187,6 +74198,17 @@
 </method>
 <method name="getSupportedPreviewFpsRange"
  return="java.util.List&lt;int[]&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSupportedPreviewFrameRateModes"
+ return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74687,6 +74709,19 @@
  visibility="public"
 >
 <parameter name="fps" type="int">
+</parameter>
+</method>
+<method name="setPreviewFrameRateMode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
 </parameter>
 </method>
 <method name="setPreviewSize"
