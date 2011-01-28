@@ -30136,6 +30136,50 @@
  visibility="public"
 >
 </field>
+<field name="PERIPHERAL_COMBO_KEYBORD_POINTING"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1472"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PERIPHERAL_KEYBORD"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1344"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PERIPHERAL_POINTING_DEVICE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1408"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PERIPHERAL_UNCATEGORIZED"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1280"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="PHONE_CELLULAR"
  type="int"
  transient="false"
@@ -60999,7 +61043,7 @@
 <method name="drawText"
  return="void"
  abstract="false"
- native="true"
+ native="false"
  synchronized="false"
  static="false"
  final="false"
