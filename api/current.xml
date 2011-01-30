@@ -174345,6 +174345,122 @@
 >
 </field>
 </class>
+<class name="PhoneGoggles"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PhoneGoggles"
+ type="android.util.PhoneGoggles"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="processCommunication"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="phoneNumbers" type="java.lang.String[]">
+</parameter>
+<parameter name="onCommunicate" type="java.lang.Runnable">
+</parameter>
+<parameter name="onCancel" type="java.lang.Runnable">
+</parameter>
+<parameter name="title" type="int">
+</parameter>
+<parameter name="titleUnlocked" type="int">
+</parameter>
+<parameter name="dialogContent" type="int">
+</parameter>
+<parameter name="communicationUnauthorized" type="int">
+</parameter>
+<parameter name="communicate" type="int">
+</parameter>
+<parameter name="cancel" type="int">
+</parameter>
+</method>
+<field name="CONFIRMATION_MODE_MATHS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CONFIRMATION_MODE_NONE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="0"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CONFIRMATION_MODE_PROMPT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="PhoneGoggles.Level"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="android.util.PhoneGoggles.Level"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="android.util.PhoneGoggles.Level[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
 <class name="PrintStreamPrinter"
  extends="java.lang.Object"
  abstract="false"
