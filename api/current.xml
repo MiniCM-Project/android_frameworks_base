@@ -122,6 +122,17 @@
  visibility="public"
 >
 </field>
+<field name="ACCESS_WIMAX_STATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.permission.ACCESS_WIMAX_STATE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACCOUNT_MANAGER"
  type="java.lang.String"
  transient="false"
@@ -358,6 +369,17 @@
  transient="false"
  volatile="false"
  value="&quot;android.permission.CHANGE_WIFI_STATE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHANGE_WIMAX_STATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.permission.CHANGE_WIMAX_STATE&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -35833,6 +35855,17 @@
  transient="false"
  volatile="false"
  value="&quot;wifi&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="WIMAX_SERVICE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wimax&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -93695,6 +93728,17 @@
  visibility="public"
 >
 </field>
+<field name="TYPE_MOBILE_WIMAX"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="TYPE_WIFI"
  type="int"
  transient="false"
@@ -144164,6 +144208,17 @@
  visibility="public"
 >
 </field>
+<field name="ACTION_WIMAX_SETTINGS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.settings.WIMAX_SETTINGS&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ACTION_WIRELESS_SETTINGS"
  type="java.lang.String"
  transient="false"
@@ -145112,6 +145167,39 @@
  visibility="public"
 >
 </field>
+<field name="WIMAX_AUTO_CONNECT_ON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wimax_auto_connect_on&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="WIMAX_LAST_CONNECTED_NETWORK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wimax_last_connected_network&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="WIMAX_ON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wimax_on&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 </class>
 <class name="Settings.SettingNotFoundException"
  extends="android.util.AndroidException"
@@ -145878,6 +145966,17 @@
  transient="false"
  volatile="false"
  value="&quot;wifi&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="RADIO_WIMAX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wimax&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
