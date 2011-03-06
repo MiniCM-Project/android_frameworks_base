@@ -143426,6 +143426,17 @@
  visibility="public"
 >
 </field>
+<field name="EXTRA_MEDIA_ALBUM_ARTIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.intent.extra.albumartist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="EXTRA_MEDIA_ARTIST"
  type="java.lang.String"
  transient="false"
@@ -143662,6 +143673,17 @@
  visibility="public"
 >
 </field>
+<field name="ALBUM_ARTIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="ALBUM_ID"
  type="java.lang.String"
  transient="false"
@@ -143728,6 +143750,17 @@
  visibility="public"
 >
 </field>
+<field name="NUMBER_OF_SONGS_FOR_ALBUM_ARTIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;numsongs_by_album_artist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="NUMBER_OF_SONGS_FOR_ARTIST"
  type="java.lang.String"
  transient="false"
@@ -143740,6 +143773,179 @@
 >
 </field>
 </interface>
+<interface name="MediaStore.Audio.AlbumartistColumns"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="ALBUM_ARTIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ALBUM_ARTIST_KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist_key&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NUMBER_OF_ALBUMS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;number_of_albums&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NUMBER_OF_TRACKS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;number_of_tracks&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</interface>
+<class name="MediaStore.Audio.Albumartists"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.provider.BaseColumns">
+</implements>
+<implements name="android.provider.MediaStore.Audio.AlbumartistColumns">
+</implements>
+<constructor name="MediaStore.Audio.Albumartists"
+ type="android.provider.MediaStore.Audio.Albumartists"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getContentUri"
+ return="android.net.Uri"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="volumeName" type="java.lang.String">
+</parameter>
+</method>
+<field name="CONTENT_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;vnd.android.cursor.dir/albumartists&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DEFAULT_SORT_ORDER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist_key&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ENTRY_CONTENT_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;vnd.android.cursor.item/albumartist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTERNAL_CONTENT_URI"
+ type="android.net.Uri"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTERNAL_CONTENT_URI"
+ type="android.net.Uri"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="MediaStore.Audio.Albumartists.Albums"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="android.provider.MediaStore.Audio.AlbumColumns">
+</implements>
+<constructor name="MediaStore.Audio.Albumartists.Albums"
+ type="android.provider.MediaStore.Audio.Albumartists.Albums"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getContentUri"
+ return="android.net.Uri"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="volumeName" type="java.lang.String">
+</parameter>
+<parameter name="albumArtistId" type="long">
+</parameter>
+</method>
+</class>
 <class name="MediaStore.Audio.Albums"
  extends="java.lang.Object"
  abstract="false"
@@ -144025,6 +144231,39 @@
  transient="false"
  volatile="false"
  value="&quot;album_art&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ALBUM_ARTIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ALBUM_ARTIST_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ALBUM_ARTIST_KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;album_artist_key&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
