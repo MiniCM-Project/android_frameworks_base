@@ -81164,6 +81164,17 @@
  visibility="public"
 >
 </method>
+<method name="isSpeakerMediaOn"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="isWiredHeadsetOn"
  return="boolean"
  abstract="false"
@@ -81340,6 +81351,19 @@
 </parameter>
 </method>
 <method name="setSpeakerphoneOn"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method name="setSpeakerMediaOn"
  return="void"
  abstract="false"
  native="false"
@@ -175498,6 +175522,17 @@
  final="false"
  deprecated="not deprecated"
  visibility="public"
+>
+</method>
+<method name="shouldMirror"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
 >
 </method>
 <method name="computeHorizontalScrollExtent"
