@@ -9806,6 +9806,28 @@
  visibility="public"
 >
 </field>
+<field name="semc_cornerbutton_fixedpady"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17104907"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_text_size_extra_large"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17104908"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="thumbnail_height"
  type="int"
  transient="false"
@@ -11247,6 +11269,50 @@
  transient="false"
  volatile="false"
  value="17301674"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_bottomleft"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17301662"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_bottomright"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17301663"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_topleft"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17301664"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_topright"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17301665"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -82777,6 +82843,17 @@
  visibility="public"
 >
 </method>
+<method name="isSpeakerMediaOn"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="isSpeakerphoneOn"
  return="boolean"
  abstract="false"
@@ -82961,6 +83038,19 @@
 <parameter name="routes" type="int">
 </parameter>
 <parameter name="mask" type="int">
+</parameter>
+</method>
+<method name="setSpeakerMediaOn"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="on" type="boolean">
 </parameter>
 </method>
 <method name="setSpeakerphoneOn"
@@ -189559,6 +189649,17 @@
 <parameter name="willNotDraw" type="boolean">
 </parameter>
 </method>
+<method name="shouldMirror"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
 <method name="showContextMenu"
  return="boolean"
  abstract="false"
@@ -192322,6 +192423,19 @@
  visibility="public"
 >
 <parameter name="focusability" type="int">
+</parameter>
+</method>
+<method name="setDirectionality"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="drawingCacheToKeep" type="int">
 </parameter>
 </method>
 <method name="setLayoutAnimation"
