@@ -11066,6 +11066,50 @@
  visibility="public"
 >
 </field>
+<field name="semc_button_corner_bottomleft"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17302457"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_bottomright"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17302458"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_topleft"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17302459"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="semc_button_corner_topright"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="17302460"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="spinner_background"
  type="int"
  transient="false"
@@ -85673,6 +85717,19 @@
 </parameter>
 <exception name="IllegalStateException" type="java.lang.IllegalStateException">
 </exception>
+</method>
+<method name="setParameters"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keyValuePairs" type="java.lang.String">
+</parameter>
 </method>
 <method name="setPreviewDisplay"
  return="void"
