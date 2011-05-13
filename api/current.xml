@@ -86070,6 +86070,17 @@
  visibility="public"
 >
 </field>
+<field name="QUALITY_WIDE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="audioBitRate"
  type="int"
  transient="false"
