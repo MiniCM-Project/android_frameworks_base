@@ -77370,7 +77370,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.0010f"
+ value="0.001f"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -99264,6 +99264,17 @@
  visibility="public"
 >
 </method>
+<method name="getKeepAliveInterval"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getPassword"
  return="java.lang.String"
  abstract="false"
@@ -99468,6 +99479,19 @@
  visibility="public"
 >
 <parameter name="displayName" type="java.lang.String">
+</parameter>
+</method>
+<method name="setKeepAliveInterval"
+ return="android.net.sip.SipProfile.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="interval" type="int">
 </parameter>
 </method>
 <method name="setOutboundProxy"
