@@ -727,6 +727,17 @@
  visibility="public"
 >
 </field>
+<field name="PREVENT_POWER_KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android.permission.PREVENT_POWER_KEY&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
 <field name="PROCESS_OUTGOING_CALLS"
  type="java.lang.String"
  transient="false"
@@ -197454,6 +197465,17 @@
  transient="false"
  volatile="false"
  value="3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PREVENT_POWER_KEY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-2147483648"
  static="true"
  final="true"
  deprecated="not deprecated"
