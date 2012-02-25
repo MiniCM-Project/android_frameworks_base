@@ -727,17 +727,6 @@
  visibility="public"
 >
 </field>
-<field name="PREVENT_POWER_KEY"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;android.permission.PREVENT_POWER_KEY&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="PROCESS_OUTGOING_CALLS"
  type="java.lang.String"
  transient="false"
@@ -19609,18 +19598,6 @@
 <parameter name="context" type="android.content.Context">
 </parameter>
 </constructor>
-<constructor name="AlertDialog.Builder"
- type="android.app.AlertDialog.Builder"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="context" type="android.content.Context">
-</parameter>
-<parameter name="theme" type="int">
-</parameter>
-</constructor>
 <method name="create"
  return="android.app.AlertDialog"
  abstract="false"
@@ -24755,315 +24732,6 @@
 </parameter>
 </method>
 </interface>
-<class name="Profile"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<implements name="android.os.Parcelable">
-</implements>
-<method name="describeContents"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getDefaultGroup"
- return="android.app.ProfileGroup"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getName"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getProfileGroup"
- return="android.app.ProfileGroup"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="name" type="java.lang.String">
-</parameter>
-</method>
-<method name="getProfileGroups"
- return="android.app.ProfileGroup[]"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="writeToParcel"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="dest" type="android.os.Parcel">
-</parameter>
-<parameter name="flags" type="int">
-</parameter>
-</method>
-</class>
-<class name="ProfileGroup"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<implements name="android.os.Parcelable">
-</implements>
-<method name="describeContents"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getLightsMode"
- return="android.app.ProfileGroup.Mode"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getName"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getRingerMode"
- return="android.app.ProfileGroup.Mode"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getRingerOverride"
- return="android.net.Uri"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSoundMode"
- return="android.app.ProfileGroup.Mode"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSoundOverride"
- return="android.net.Uri"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getVibrateMode"
- return="android.app.ProfileGroup.Mode"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="isDefaultGroup"
- return="boolean"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="writeToParcel"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="dest" type="android.os.Parcel">
-</parameter>
-<parameter name="flags" type="int">
-</parameter>
-</method>
-</class>
-<class name="ProfileGroup.Mode"
- extends="java.lang.Enum"
- abstract="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="valueOf"
- return="android.app.ProfileGroup.Mode"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="name" type="java.lang.String">
-</parameter>
-</method>
-<method name="values"
- return="android.app.ProfileGroup.Mode[]"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-</class>
-<class name="ProfileManager"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="getActiveProfile"
- return="android.app.Profile"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getProfile"
- return="android.app.Profile"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="profileName" type="java.lang.String">
-</parameter>
-</method>
-<method name="getProfileNames"
- return="java.lang.String[]"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getProfiles"
- return="android.app.Profile[]"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="setActiveProfile"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="profileName" type="java.lang.String">
-</parameter>
-</method>
-</class>
 <class name="ProgressDialog"
  extends="android.app.AlertDialog"
  abstract="false"
@@ -30467,50 +30135,6 @@
  transient="false"
  volatile="false"
  value="2316"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="PERIPHERAL_COMBO_KEYBORD_POINTING"
- type="int"
- transient="false"
- volatile="false"
- value="1472"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="PERIPHERAL_KEYBORD"
- type="int"
- transient="false"
- volatile="false"
- value="1344"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="PERIPHERAL_POINTING_DEVICE"
- type="int"
- transient="false"
- volatile="false"
- value="1408"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="PERIPHERAL_UNCATEGORIZED"
- type="int"
- transient="false"
- volatile="false"
- value="1280"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -36108,17 +35732,6 @@
  transient="false"
  volatile="false"
  value="&quot;power&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="PROFILE_SERVICE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;profile&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -61567,7 +61180,7 @@
 <method name="drawText"
  return="void"
  abstract="false"
- native="false"
+ native="true"
  synchronized="false"
  static="false"
  final="false"
@@ -74062,47 +73675,6 @@
 >
 </field>
 </class>
-<class name="Camera.Coordinate"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="Camera.Coordinate"
- type="android.hardware.Camera.Coordinate"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="x" type="int">
-</parameter>
-<parameter name="y" type="int">
-</parameter>
-</constructor>
-<field name="xCoordinate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="yCoordinate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
 <interface name="Camera.ErrorCallback"
  abstract="true"
  static="true"
@@ -74194,96 +73766,8 @@
  visibility="public"
 >
 </method>
-<method name="getAutoExposure"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getBrightness"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getColorEffect"
  return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getContinuousAf"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getContrast"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getDefaultBrightness"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getDefaultContrast"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getDefaultSaturation"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getDefaultSharpness"
- return="int"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74372,17 +73856,6 @@
  visibility="public"
 >
 </method>
-<method name="getISOValue"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getInt"
  return="int"
  abstract="false"
@@ -74429,62 +73902,7 @@
  visibility="public"
 >
 </method>
-<method name="getLensShade"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getMaxBrightness"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getMaxContrast"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getMaxExposureCompensation"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getMaxSaturation"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getMaxSharpness"
  return="int"
  abstract="false"
  native="false"
@@ -74574,30 +73992,8 @@
  visibility="public"
 >
 </method>
-<method name="getPreviewFrameRateMode"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getPreviewSize"
  return="android.hardware.Camera.Size"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSaturation"
- return="int"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74618,17 +74014,6 @@
  visibility="public"
 >
 </method>
-<method name="getSharpness"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getSupportedAntibanding"
  return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
@@ -74640,29 +74025,7 @@
  visibility="public"
 >
 </method>
-<method name="getSupportedAutoexposure"
- return="java.util.List&lt;java.lang.String&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getSupportedColorEffects"
- return="java.util.List&lt;java.lang.String&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSupportedContinuousAfModes"
  return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
  native="false"
@@ -74695,30 +74058,8 @@
  visibility="public"
 >
 </method>
-<method name="getSupportedIsoValues"
- return="java.util.List&lt;java.lang.String&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getSupportedJpegThumbnailSizes"
  return="java.util.List&lt;android.hardware.Camera.Size&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getSupportedLensShadeModes"
- return="java.util.List&lt;java.lang.String&gt;"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74772,17 +74113,6 @@
  visibility="public"
 >
 </method>
-<method name="getSupportedPreviewFrameRateModes"
- return="java.util.List&lt;java.lang.String&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getSupportedPreviewFrameRates"
  return="java.util.List&lt;java.lang.Integer&gt;"
  abstract="false"
@@ -74816,52 +74146,8 @@
  visibility="public"
 >
 </method>
-<method name="getSupportedTouchAfAec"
- return="java.util.List&lt;java.lang.String&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getSupportedWhiteBalance"
  return="java.util.List&lt;java.lang.String&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getTouchAfAec"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getTouchIndexAec"
- return="android.hardware.Camera.Coordinate"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getTouchIndexAf"
- return="android.hardware.Camera.Coordinate"
  abstract="false"
  native="false"
  synchronized="false"
@@ -74906,17 +74192,6 @@
 </method>
 <method name="getZoomRatios"
  return="java.util.List&lt;java.lang.Integer&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="isSmartContrastEnabled"
- return="boolean"
  abstract="false"
  native="false"
  synchronized="false"
@@ -75015,32 +74290,6 @@
 <parameter name="antibanding" type="java.lang.String">
 </parameter>
 </method>
-<method name="setAutoExposure"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="value" type="java.lang.String">
-</parameter>
-</method>
-<method name="setBrightness"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="brightness" type="int">
-</parameter>
-</method>
 <method name="setColorEffect"
  return="void"
  abstract="false"
@@ -75052,32 +74301,6 @@
  visibility="public"
 >
 <parameter name="value" type="java.lang.String">
-</parameter>
-</method>
-<method name="setContinuousAf"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="value" type="java.lang.String">
-</parameter>
-</method>
-<method name="setContrast"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="contrast" type="int">
 </parameter>
 </method>
 <method name="setExposureCompensation"
@@ -75184,19 +74407,6 @@
 <parameter name="timestamp" type="long">
 </parameter>
 </method>
-<method name="setISOValue"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="iso" type="java.lang.String">
-</parameter>
-</method>
 <method name="setJpegQuality"
  return="void"
  abstract="false"
@@ -75236,19 +74446,6 @@
 <parameter name="width" type="int">
 </parameter>
 <parameter name="height" type="int">
-</parameter>
-</method>
-<method name="setLensShade"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="lensshade" type="java.lang.String">
 </parameter>
 </method>
 <method name="setPictureFormat"
@@ -75320,19 +74517,6 @@
 <parameter name="fps" type="int">
 </parameter>
 </method>
-<method name="setPreviewFrameRateMode"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="value" type="java.lang.String">
-</parameter>
-</method>
 <method name="setPreviewSize"
  return="void"
  abstract="false"
@@ -75361,19 +74545,6 @@
 <parameter name="rotation" type="int">
 </parameter>
 </method>
-<method name="setSaturation"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="saturation" type="int">
-</parameter>
-</method>
 <method name="setSceneMode"
  return="void"
  abstract="false"
@@ -75385,75 +74556,6 @@
  visibility="public"
 >
 <parameter name="value" type="java.lang.String">
-</parameter>
-</method>
-<method name="setSharpness"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="sharpness" type="int">
-</parameter>
-</method>
-<method name="setSmartContrastEnabled"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="enabled" type="boolean">
-</parameter>
-</method>
-<method name="setTouchAfAec"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="value" type="java.lang.String">
-</parameter>
-</method>
-<method name="setTouchIndexAec"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="x" type="int">
-</parameter>
-<parameter name="y" type="int">
-</parameter>
-</method>
-<method name="setTouchIndexAf"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="x" type="int">
-</parameter>
-<parameter name="y" type="int">
 </parameter>
 </method>
 <method name="setWhiteBalance"
@@ -75533,61 +74635,6 @@
  transient="false"
  volatile="false"
  value="&quot;off&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="AUTO_EXPOSURE_CENTER_WEIGHTED"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;meter-center&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="AUTO_EXPOSURE_FRAME_AVG"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;meter-average&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="AUTO_EXPOSURE_SPOT_METERING"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;meter-spot&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CAF_OFF"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;caf-off&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CAF_ON"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;caf-on&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -75847,105 +74894,6 @@
  visibility="public"
 >
 </field>
-<field name="ISO_100"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;100&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ISO_1250"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;1250&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ISO_200"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;200&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ISO_400"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;400&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ISO_800"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;800&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ISO_AUTO"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;auto&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ISO_HJR"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;deblur&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="LENSSHADE_DISABLE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;disable&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="LENSSHADE_ENABLE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;enable&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="PREVIEW_FPS_MAX_INDEX"
  type="int"
  transient="false"
@@ -76138,28 +75086,6 @@
  transient="false"
  volatile="false"
  value="&quot;theatre&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="TOUCH_AF_AEC_OFF"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;touch-off&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="TOUCH_AF_AEC_ON"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;touch-on&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -77381,7 +76307,7 @@
  type="float"
  transient="false"
  volatile="false"
- value="0.001f"
+ value="0.0010f"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -86037,17 +84963,6 @@
 <parameter name="quality" type="int">
 </parameter>
 </method>
-<field name="QUALITY_HD"
- type="int"
- transient="false"
- volatile="false"
- value="2"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="QUALITY_HIGH"
  type="int"
  transient="false"
@@ -86064,17 +84979,6 @@
  transient="false"
  volatile="false"
  value="0"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="QUALITY_WIDE"
- type="int"
- transient="false"
- volatile="false"
- value="3"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -86274,226 +85178,6 @@
  volatile="false"
  value="1"
  static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
-<class name="EncoderCapabilities"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="getAudioEncoders"
- return="java.util.List&lt;android.media.EncoderCapabilities.AudioEncoderCap&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getOutputFileFormats"
- return="int[]"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getVideoEncoders"
- return="java.util.List&lt;android.media.EncoderCapabilities.VideoEncoderCap&gt;"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-</class>
-<class name="EncoderCapabilities.AudioEncoderCap"
- extends="java.lang.Object"
- abstract="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<field name="mCodec"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxBitRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxChannels"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxSampleRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinBitRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinChannels"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinSampleRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
-<class name="EncoderCapabilities.VideoEncoderCap"
- extends="java.lang.Object"
- abstract="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<field name="mCodec"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxBitRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxFrameHeight"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxFrameRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMaxFrameWidth"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinBitRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinFrameHeight"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinFrameRate"
- type="int"
- transient="false"
- volatile="false"
- static="false"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="mMinFrameWidth"
- type="int"
- transient="false"
- volatile="false"
- static="false"
  final="true"
  deprecated="not deprecated"
  visibility="public"
@@ -88788,21 +87472,6 @@
 >
 <parameter name="c" type="android.hardware.Camera">
 </parameter>
-</method>
-<method name="setCameraParameters"
- return="void"
- abstract="false"
- native="true"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="params" type="java.lang.String">
-</parameter>
-<exception name="IllegalStateException" type="java.lang.IllegalStateException">
-</exception>
 </method>
 <method name="setMaxDuration"
  return="void"
@@ -99286,17 +97955,6 @@
  visibility="public"
 >
 </method>
-<method name="getKeepAliveInterval"
- return="int"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 <method name="getPassword"
  return="java.lang.String"
  abstract="false"
@@ -99501,19 +98159,6 @@
  visibility="public"
 >
 <parameter name="displayName" type="java.lang.String">
-</parameter>
-</method>
-<method name="setKeepAliveInterval"
- return="android.net.sip.SipProfile.Builder"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="interval" type="int">
 </parameter>
 </method>
 <method name="setOutboundProxy"
@@ -100386,16 +99031,6 @@
  visibility="public"
 >
 </field>
-<field name="adhocSSID"
- type="boolean"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="allowedAuthAlgorithms"
  type="java.util.BitSet"
  transient="false"
@@ -100438,16 +99073,6 @@
 </field>
 <field name="allowedProtocols"
  type="java.util.BitSet"
- transient="false"
- volatile="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="frequency"
- type="int"
  transient="false"
  volatile="false"
  static="false"
@@ -100585,169 +99210,6 @@
  transient="false"
  volatile="false"
  value="&quot;auth_alg&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
-<class name="WifiConfiguration.ChannelFrequency"
- extends="java.lang.Object"
- abstract="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<field name="CHANNEL_1"
- type="int"
- transient="false"
- volatile="false"
- value="2412"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_10"
- type="int"
- transient="false"
- volatile="false"
- value="2457"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_11"
- type="int"
- transient="false"
- volatile="false"
- value="2462"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_12"
- type="int"
- transient="false"
- volatile="false"
- value="2467"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_13"
- type="int"
- transient="false"
- volatile="false"
- value="2472"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_14"
- type="int"
- transient="false"
- volatile="false"
- value="2484"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_2"
- type="int"
- transient="false"
- volatile="false"
- value="2417"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_3"
- type="int"
- transient="false"
- volatile="false"
- value="2422"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_4"
- type="int"
- transient="false"
- volatile="false"
- value="2427"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_5"
- type="int"
- transient="false"
- volatile="false"
- value="2432"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_6"
- type="int"
- transient="false"
- volatile="false"
- value="2437"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_7"
- type="int"
- transient="false"
- volatile="false"
- value="2442"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_8"
- type="int"
- transient="false"
- volatile="false"
- value="2447"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CHANNEL_9"
- type="int"
- transient="false"
- volatile="false"
- value="2452"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -143472,17 +141934,6 @@
  visibility="public"
 >
 </field>
-<field name="EXTRA_MEDIA_ALBUM_ARTIST"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;android.intent.extra.albumartist&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="EXTRA_MEDIA_ARTIST"
  type="java.lang.String"
  transient="false"
@@ -143719,17 +142170,6 @@
  visibility="public"
 >
 </field>
-<field name="ALBUM_ARTIST"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="ALBUM_ID"
  type="java.lang.String"
  transient="false"
@@ -143796,17 +142236,6 @@
  visibility="public"
 >
 </field>
-<field name="NUMBER_OF_SONGS_FOR_ALBUM_ARTIST"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;numsongs_by_album_artist&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
 <field name="NUMBER_OF_SONGS_FOR_ARTIST"
  type="java.lang.String"
  transient="false"
@@ -143819,179 +142248,6 @@
 >
 </field>
 </interface>
-<interface name="MediaStore.Audio.AlbumartistColumns"
- abstract="true"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<field name="ALBUM_ARTIST"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ALBUM_ARTIST_KEY"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist_key&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="NUMBER_OF_ALBUMS"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;number_of_albums&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="NUMBER_OF_TRACKS"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;number_of_tracks&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</interface>
-<class name="MediaStore.Audio.Albumartists"
- extends="java.lang.Object"
- abstract="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<implements name="android.provider.BaseColumns">
-</implements>
-<implements name="android.provider.MediaStore.Audio.AlbumartistColumns">
-</implements>
-<constructor name="MediaStore.Audio.Albumartists"
- type="android.provider.MediaStore.Audio.Albumartists"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<method name="getContentUri"
- return="android.net.Uri"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="volumeName" type="java.lang.String">
-</parameter>
-</method>
-<field name="CONTENT_TYPE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;vnd.android.cursor.dir/albumartists&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="DEFAULT_SORT_ORDER"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist_key&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ENTRY_CONTENT_TYPE"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;vnd.android.cursor.item/albumartist&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="EXTERNAL_CONTENT_URI"
- type="android.net.Uri"
- transient="false"
- volatile="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="INTERNAL_CONTENT_URI"
- type="android.net.Uri"
- transient="false"
- volatile="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
-<class name="MediaStore.Audio.Albumartists.Albums"
- extends="java.lang.Object"
- abstract="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<implements name="android.provider.MediaStore.Audio.AlbumColumns">
-</implements>
-<constructor name="MediaStore.Audio.Albumartists.Albums"
- type="android.provider.MediaStore.Audio.Albumartists.Albums"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<method name="getContentUri"
- return="android.net.Uri"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="volumeName" type="java.lang.String">
-</parameter>
-<parameter name="albumArtistId" type="long">
-</parameter>
-</method>
-</class>
 <class name="MediaStore.Audio.Albums"
  extends="java.lang.Object"
  abstract="false"
@@ -144277,39 +142533,6 @@
  transient="false"
  volatile="false"
  value="&quot;album_art&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ALBUM_ARTIST"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ALBUM_ARTIST_ID"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist_id&quot;"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="ALBUM_ARTIST_KEY"
- type="java.lang.String"
- transient="false"
- volatile="false"
- value="&quot;album_artist_key&quot;"
  static="true"
  final="true"
  deprecated="not deprecated"
@@ -177237,122 +175460,6 @@
 >
 </field>
 </class>
-<class name="PhoneGoggles"
- extends="java.lang.Object"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="PhoneGoggles"
- type="android.util.PhoneGoggles"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<method name="processCommunication"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="context" type="android.content.Context">
-</parameter>
-<parameter name="type" type="int">
-</parameter>
-<parameter name="phoneNumbers" type="java.lang.String[]">
-</parameter>
-<parameter name="onCommunicate" type="java.lang.Runnable">
-</parameter>
-<parameter name="onCancel" type="java.lang.Runnable">
-</parameter>
-<parameter name="title" type="int">
-</parameter>
-<parameter name="titleUnlocked" type="int">
-</parameter>
-<parameter name="dialogContent" type="int">
-</parameter>
-<parameter name="communicationUnauthorized" type="int">
-</parameter>
-<parameter name="communicate" type="int">
-</parameter>
-<parameter name="cancel" type="int">
-</parameter>
-</method>
-<field name="CONFIRMATION_MODE_MATHS"
- type="int"
- transient="false"
- volatile="false"
- value="2"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CONFIRMATION_MODE_NONE"
- type="int"
- transient="false"
- volatile="false"
- value="0"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="CONFIRMATION_MODE_PROMPT"
- type="int"
- transient="false"
- volatile="false"
- value="1"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-</class>
-<class name="PhoneGoggles.Level"
- extends="java.lang.Enum"
- abstract="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-<method name="valueOf"
- return="android.util.PhoneGoggles.Level"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="name" type="java.lang.String">
-</parameter>
-</method>
-<method name="values"
- return="android.util.PhoneGoggles.Level[]"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-</class>
 <class name="PrintStreamPrinter"
  extends="java.lang.Object"
  abstract="false"
@@ -197476,17 +195583,6 @@
  transient="false"
  volatile="false"
  value="3"
- static="true"
- final="true"
- deprecated="not deprecated"
- visibility="public"
->
-</field>
-<field name="PREVENT_POWER_KEY"
- type="int"
- transient="false"
- volatile="false"
- value="-2147483648"
  static="true"
  final="true"
  deprecated="not deprecated"
